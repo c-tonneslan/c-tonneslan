@@ -29,6 +29,9 @@ Currently looking for software engineering internships or full-time roles.
 | [google/uuid](https://github.com/google/uuid) | [null: fix NullUUID.Scan returning Valid=true for empty string/bytes #216](https://github.com/google/uuid/pull/216) | Open |
 | [charmbracelet/log](https://github.com/charmbracelet/log) | [Share level pointer so child loggers inherit parent level changes #209](https://github.com/charmbracelet/log/pull/209) | Open |
 | [charmbracelet/bubbles](https://github.com/charmbracelet/bubbles) | [list: fix RemoveItem using wrong index when a filter is active #970](https://github.com/charmbracelet/bubbles/pull/970) | Open |
+| [uber-go/goleak](https://github.com/uber-go/goleak) | [IgnoreAnyFunction: also check the created-by frame #143](https://github.com/uber-go/goleak/pull/143) | Open |
+| [charmbracelet/huh](https://github.com/charmbracelet/huh) | [Scope navigation messages to their originating form #778](https://github.com/charmbracelet/huh/pull/778) | Open |
+| [rs/zerolog](https://github.com/rs/zerolog) | [ctx: propagate Go context to events created via Ctx(ctx) #769](https://github.com/rs/zerolog/pull/769) | Open |
 
 ## Projects
 
