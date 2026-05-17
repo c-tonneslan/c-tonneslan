@@ -1,8 +1,21 @@
-I'm Charlie, a software engineer interested in systems, real-time infrastructure, and developer tooling. I work mostly in TypeScript and Go, with some Python and Rust mixed in.
+I'm Charlie. Software engineer. The work I keep coming back to is civic and urban: housing, zoning, transit, civil infrastructure, and the policy that shapes them. Mostly Go and TypeScript day-to-day, with Python and Rust on the side. Plenty of backend and developer tooling work too. I read other people's code for fun, which is how most of the bugs below got found.
 
-Currently looking for software engineering internships or full-time roles.
+Open to remote software engineering roles, especially anywhere code meets cities, planning, or public infrastructure. Reach me at cst0520@gmail.com.
 
-## Open Source
+## Merged contributions
+
+Bugs and features I shipped into widely-used Go libraries:
+
+- **[jackc/pgx](https://github.com/jackc/pgx)** ([#2554](https://github.com/jackc/pgx/pull/2554), [#2556](https://github.com/jackc/pgx/pull/2556), [#2559](https://github.com/jackc/pgx/pull/2559)). Postgres driver for Go. Fixed a context leak where `connectPreferred`'s fallback dial inherited the already-expired deadline. Preserved the full error chain across `normalizeTimeoutError` so callers can `errors.Unwrap` to the real cause. Added an `ErrConnClosed` sentinel so callers can `errors.Is` the closed-pool case. Three PRs, three merges, all reviewed by jackc.
+- **[wailsapp/wails](https://github.com/wailsapp/wails)** ([#5468](https://github.com/wailsapp/wails/pull/5468)). Go + WebView desktop framework. Nil-guarded `Application.Quit` so calling it before `Run()` no longer panics the host app on early shutdown.
+- **[nats-io/nats.go](https://github.com/nats-io/nats.go)** ([#2076](https://github.com/nats-io/nats.go/pull/2076)). NATS client for Go. Tightened the JetStream KV key validator so consecutive dots stop sneaking past `keyValid` and `searchKeyValid`, which had been quietly producing unreadable keys.
+- **[urfave/cli](https://github.com/urfave/cli)** ([#2328](https://github.com/urfave/cli/pull/2328)). Most-used CLI framework in Go. Pinned down the empty-positional-after-flag case with a regression test I ran into writing a different tool.
+- **[gocolly/colly](https://github.com/gocolly/colly)** ([#873](https://github.com/gocolly/colly/pull/873)). Web scraping framework. Dropped a deprecated `rand.Seed` call from `httpBackend.Init` that started warning under Go 1.20+.
+
+Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, and more. Full list collapsed at the bottom.
+
+<details>
+<summary>All PRs (open and merged)</summary>
 
 | Repo | PR | Status |
 |------|-----|--------|
@@ -24,10 +37,11 @@ Currently looking for software engineering internships or full-time roles.
 | [jmoiron/sqlx](https://github.com/jmoiron/sqlx) | [In: skip ? inside SQL comments and string literals #984](https://github.com/jmoiron/sqlx/pull/984) | Open |
 | [jmoiron/sqlx](https://github.com/jmoiron/sqlx) | [named: support PostgreSQL :: cast directly after a named param #985](https://github.com/jmoiron/sqlx/pull/985) | Open |
 | [spf13/afero](https://github.com/spf13/afero) | [MemMapFs: Mkdir now errors when the parent directory doesn't exist #599](https://github.com/spf13/afero/pull/599) | Open |
-| [nats-io/nats.go](https://github.com/nats-io/nats.go) | [kv: reject keys with consecutive dots in keyValid and searchKeyValid #2076](https://github.com/nats-io/nats.go/pull/2076) | Open |
+| [nats-io/nats.go](https://github.com/nats-io/nats.go) | [kv: reject keys with consecutive dots in keyValid and searchKeyValid #2076](https://github.com/nats-io/nats.go/pull/2076) | Merged |
 | [pterm/pterm](https://github.com/pterm/pterm) | [fix: BasicTextPrinter.Sprintln appends two newlines instead of one #784](https://github.com/pterm/pterm/pull/784) | Open |
 | [pterm/pterm](https://github.com/pterm/pterm) | [fix: InteractiveMultiselect right arrow selects only filtered options #785](https://github.com/pterm/pterm/pull/785) | Open |
 | [pterm/pterm](https://github.com/pterm/pterm) | [fix(spinner): remove data race on SpinnerPrinter IsActive and Text #786](https://github.com/pterm/pterm/pull/786) | Open |
+| [pterm/pterm](https://github.com/pterm/pterm) | [fix(table): use unicode vertical bar in default Separator #787](https://github.com/pterm/pterm/pull/787) | Open |
 | [google/uuid](https://github.com/google/uuid) | [null: fix NullUUID.Scan returning Valid=true for empty string/bytes #216](https://github.com/google/uuid/pull/216) | Open |
 | [charmbracelet/log](https://github.com/charmbracelet/log) | [Share level pointer so child loggers inherit parent level changes #209](https://github.com/charmbracelet/log/pull/209) | Open |
 | [charmbracelet/log](https://github.com/charmbracelet/log) | [fix: share mutex between a logger and its With() clones #210](https://github.com/charmbracelet/log/pull/210) | Open |
@@ -62,9 +76,10 @@ Currently looking for software engineering internships or full-time roles.
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [parser: keep grouping trailing documents after adjacent --- #877](https://github.com/goccy/go-yaml/pull/877) | Open |
 | [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | [fix(nodejs): silently skip package.json files with invalid names #10668](https://github.com/aquasecurity/trivy/pull/10668) | Open |
 | [gorilla/schema](https://github.com/gorilla/schema) | [decoder: don't panic when path crosses an unexported pointer field #243](https://github.com/gorilla/schema/pull/243) | Open |
+| [gorilla/csrf](https://github.com/gorilla/csrf) | [csrf: reject Origin: null as an opaque origin #207](https://github.com/gorilla/csrf/pull/207) | Open |
 | [gorilla/sessions](https://github.com/gorilla/sessions) | [registry: don't panic when store.New returns a nil session #291](https://github.com/gorilla/sessions/pull/291) | Open |
 | [go-rod/rod](https://github.com/go-rod/rod) | [fix: clear per-session CDP states when a page closes #1235](https://github.com/go-rod/rod/pull/1235) | Open |
-| [gocolly/colly](https://github.com/gocolly/colly) | [drop deprecated rand.Seed call in httpBackend.Init #873](https://github.com/gocolly/colly/pull/873) | Open |
+| [gocolly/colly](https://github.com/gocolly/colly) | [drop deprecated rand.Seed call in httpBackend.Init #873](https://github.com/gocolly/colly/pull/873) | Merged |
 | [kataras/iris](https://github.com/kataras/iris) | [docs: fix broken Movies Service link in _examples README #2606](https://github.com/kataras/iris/pull/2606) | Open |
 | [mingrammer/flog](https://github.com/mingrammer/flog) | [drop deprecated rand.Seed call in main #70](https://github.com/mingrammer/flog/pull/70) | Open |
 | [valyala/fastjson](https://github.com/valyala/fastjson) | [util: replace deprecated reflect.StringHeader/SliceHeader #121](https://github.com/valyala/fastjson/pull/121) | Open |
@@ -74,24 +89,39 @@ Currently looking for software engineering internships or full-time roles.
 | [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat: add Track element constructor #176](https://github.com/chasefleming/elem-go/pull/176) | Open |
 | [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat: add Picture element constructor #177](https://github.com/chasefleming/elem-go/pull/177) | Open |
 | [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat: add Bdi and Bdo element constructors #178](https://github.com/chasefleming/elem-go/pull/178) | Open |
+| [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat(attrs): add ClassNames helper for conditional class lists #179](https://github.com/chasefleming/elem-go/pull/179) | Open |
 | [r3labs/sse](https://github.com/r3labs/sse) | [test: poll goroutine count to deflake TestSubscribeWithContextDone #191](https://github.com/r3labs/sse/pull/191) | Open |
+| [muesli/mango](https://github.com/muesli/mango) | [feat: honor SOURCE_DATE_EPOCH for the man page heading timestamp #28](https://github.com/muesli/mango/pull/28) | Open |
+| [muesli/gamut](https://github.com/muesli/gamut) | [palette: switch Color literals to keyed form to silence go vet #26](https://github.com/muesli/gamut/pull/26) | Open |
+| [muesli/gitcha](https://github.com/muesli/gitcha) | [fix: don't ignore-match the root path itself in FindFiles #9](https://github.com/muesli/gitcha/pull/9) | Open |
+| [coreos/go-iptables](https://github.com/coreos/go-iptables) | [iptables: return error from ListById when chain has no matching rule #136](https://github.com/coreos/go-iptables/pull/136) | Open |
+| [fatih/structtag](https://github.com/fatih/structtag) | [export sentinel errors so callers can use errors.Is #27](https://github.com/fatih/structtag/pull/27) | Open |
+| [fatih/structtag](https://github.com/fatih/structtag) | [docs: rewrite Tags.Get doc comment #28](https://github.com/fatih/structtag/pull/28) | Open |
+| [bwmarrin/discordgo](https://github.com/bwmarrin/discordgo) | [fix: nil-check wsConn in Op1 heartbeat and ChannelVoiceJoinManual #1719](https://github.com/bwmarrin/discordgo/pull/1719) | Open |
+| [go-playground/locales](https://github.com/go-playground/locales) | [docs: clarify Ordinal/CardinalPluralRule README example output #51](https://github.com/go-playground/locales/pull/51) | Open |
+| [alexedwards/scs](https://github.com/alexedwards/scs) | [gormstore: export Session for callers using custom migration tooling #263](https://github.com/alexedwards/scs/pull/263) | Open |
+| [rs/xid](https://github.com/rs/xid) | [docs(NewWithTime): note 4-byte timestamp can't hold post-2106 times #116](https://github.com/rs/xid/pull/116) | Open |
 | [coreos/go-oidc](https://github.com/coreos/go-oidc) | [oidc: expose typed error and sentinel for issuer-mismatch failures #481](https://github.com/coreos/go-oidc/pull/481) | Open |
 | [go-playground/validator](https://github.com/go-playground/validator) | [Anchor cron regex so substrings can't pass validation #1578](https://github.com/go-playground/validator/pull/1578) | Open |
 | [mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) | [Fix wrong arg count in Exec's "not enough args" error #1398](https://github.com/mattn/go-sqlite3/pull/1398) | Open |
 | [jackc/pgx](https://github.com/jackc/pgx) | [pgconn: add ErrConnClosed sentinel and unwrap it from connLockError #2559](https://github.com/jackc/pgx/pull/2559) | Merged |
 | [samber/lo](https://github.com/samber/lo) | [mutable: fix wrong/misleading doc comments on Filter, FilterI, Map, MapI #888](https://github.com/samber/lo/pull/888) | Open |
 | [charmbracelet/x](https://github.com/charmbracelet/x) | [ansi: document that StringWidth treats tabs as zero width #864](https://github.com/charmbracelet/x/pull/864) | Open |
+| [charmbracelet/x](https://github.com/charmbracelet/x) | [fix(ansi): emit DECSWT/DECSIN with correct OSC numbers and ST #865](https://github.com/charmbracelet/x/pull/865) | Open |
 | [samber/lo](https://github.com/samber/lo) | [docs(concat): example uses lo.Concat, not lo.Flatten #889](https://github.com/samber/lo/pull/889) | Open |
 | [dustin/go-humanize](https://github.com/dustin/go-humanize) | [si: accept the Greek letter mu as an alias for µ in ParseSI #150](https://github.com/dustin/go-humanize/pull/150) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [scanner: bump offset over the '#' in scanComment #878](https://github.com/goccy/go-yaml/pull/878) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [printer: check Alias not Anchor in the AliasType branch #879](https://github.com/goccy/go-yaml/pull/879) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [ast: keep trailing blank lines when rendering \|+ literals #880](https://github.com/goccy/go-yaml/pull/880) | Open |
+| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [playground: add Docs link to pkg.go.dev #881](https://github.com/goccy/go-yaml/pull/881) | Open |
 | [pelletier/go-toml](https://github.com/pelletier/go-toml) | [marshaler: respect TextMarshaler when checking omitempty on structs #1060](https://github.com/pelletier/go-toml/pull/1060) | Open |
 | [samber/lo](https://github.com/samber/lo) | [mutable: zero out tail slots dropped by Filter and FilterI #890](https://github.com/samber/lo/pull/890) | Open |
 | [sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) | [stream_reader: stop wrapping nil APIError into "error, <nil>" #1107](https://github.com/sashabaranov/go-openai/pull/1107) | Open |
 | [sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) | [form_builder: always set a Content-Type on reader-based form parts #1108](https://github.com/sashabaranov/go-openai/pull/1108) | Open |
 | [caarlos0/env](https://github.com/caarlos0/env) | [respect env values over non-zero fields under SetDefaultsForZeroValuesOnly #420](https://github.com/caarlos0/env/pull/420) | Open |
+| [caarlos0/env](https://github.com/caarlos0/env) | [feat: AllowEmpty option to keep empty env values instead of defaults #421](https://github.com/caarlos0/env/pull/421) | Open |
 | [charmbracelet/fang](https://github.com/charmbracelet/fang) | [style the --version output to match the rest of fang #98](https://github.com/charmbracelet/fang/pull/98) | Open |
+| [charmbracelet/fang](https://github.com/charmbracelet/fang) | [style 'unknown help topic' errors #99](https://github.com/charmbracelet/fang/pull/99) | Open |
 | [bradfitz/gomemcache](https://github.com/bradfitz/gomemcache) | [Ping returns ErrNoServers when no servers are configured #195](https://github.com/bradfitz/gomemcache/pull/195) | Open |
 | [go-chi/chi](https://github.com/go-chi/chi) | [middleware: thread useColor through Panic so NoColor logger emits plain text #1094](https://github.com/go-chi/chi/pull/1094) | Open |
 | [go-chi/chi](https://github.com/go-chi/chi) | [middleware: GetHead advertises HEAD in the 405 Allow header #1095](https://github.com/go-chi/chi/pull/1095) | Open |
@@ -114,6 +144,7 @@ Currently looking for software engineering internships or full-time roles.
 | [Masterminds/sprig](https://github.com/Masterminds/sprig) | [docs: clarify that seq returns a string, not an integer slice #479](https://github.com/Masterminds/sprig/pull/479) | Open |
 | [go-task/slim-sprig](https://github.com/go-task/slim-sprig) | [drop deprecated rand.Seed init hook #24](https://github.com/go-task/slim-sprig/pull/24) | Open |
 | [tucnak/telebot](https://github.com/tucnak/telebot) | [errors: redact bot token from wrapped transport errors #809](https://github.com/tucnak/telebot/pull/809) | Open |
+| [tucnak/telebot](https://github.com/tucnak/telebot) | [fix(file): default the multipart filename to the on-disk basename #810](https://github.com/tucnak/telebot/pull/810) | Open |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [db unarchive: suggest the group unarchive command when applicable #1041](https://github.com/tursodatabase/turso-cli/pull/1041) | Open |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [from-csv: print sqlite's stderr as text instead of hex #1042](https://github.com/tursodatabase/turso-cli/pull/1042) | Open |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [db create: derive group from source db when forking #1043](https://github.com/tursodatabase/turso-cli/pull/1043) | Open |
@@ -124,14 +155,17 @@ Currently looking for software engineering internships or full-time roles.
 | [go-jose/go-jose](https://github.com/go-jose/go-jose) | [remove bare returns outside the json/ fork #234](https://github.com/go-jose/go-jose/pull/234) | Open |
 | [charmbracelet/freeze](https://github.com/charmbracelet/freeze) | [expand --output path so '~' and relative paths land where users expect #267](https://github.com/charmbracelet/freeze/pull/267) | Open |
 | [charmbracelet/freeze](https://github.com/charmbracelet/freeze) | [help: swap JoinHorizontal/JoinVertical position arguments #268](https://github.com/charmbracelet/freeze/pull/268) | Open |
-| [simonw/sqlite-utils](https://github.com/simonw/sqlite-utils) | [docs: set smartquotes_action="qe" so '--' doesn't render as an en dash #735](https://github.com/simonw/sqlite-utils/pull/735) | Open |
+| [simonw/sqlite-utils](https://github.com/simonw/sqlite-utils) | [Don't transform empty CSV table that was never created #736](https://github.com/simonw/sqlite-utils/pull/736) | Open |
+| [simonw/sqlite-utils](https://github.com/simonw/sqlite-utils) | [docs: render --convert and --functions literally in install section #737](https://github.com/simonw/sqlite-utils/pull/737) | Open |
 | [rust-bakery/nom](https://github.com/rust-bakery/nom) | [tests: make issue_848 overflow test portable to 32-bit usize #1881](https://github.com/rust-bakery/nom/pull/1881) | Open |
 | [rust-itertools/itertools](https://github.com/rust-itertools/itertools) | [take_while_inclusive: tighten FusedIterator to require I: FusedIterator #1101](https://github.com/rust-itertools/itertools/pull/1101) | Open |
+| [rust-itertools/itertools](https://github.com/rust-itertools/itertools) | [InterleaveShortest: don't overflow size_hint lower bound #1102](https://github.com/rust-itertools/itertools/pull/1102) | Open |
+| [rust-itertools/itertools](https://github.com/rust-itertools/itertools) | [PeekNth: don't panic on peek_nth(usize::MAX) #1103](https://github.com/rust-itertools/itertools/pull/1103) | Open |
 | [go-redis/cache](https://github.com/go-redis/cache) | [local: clamp tinylfu cache size to avoid panic at size 1 or 2 #112](https://github.com/go-redis/cache/pull/112) | Open |
 | [go-redis/cache](https://github.com/go-redis/cache) | [export rediser interface as Rediser #113](https://github.com/go-redis/cache/pull/113) | Open |
 | [cookiecutter/cookiecutter](https://github.com/cookiecutter/cookiecutter) | [generate: keep applying overrides after the first invalid one #2223](https://github.com/cookiecutter/cookiecutter/pull/2223) | Open |
 | [launchbadge/sqlx](https://github.com/launchbadge/sqlx) | [sqlx-cli: read confirmation as a plain line, not a raw-mode toggle #4268](https://github.com/launchbadge/sqlx/pull/4268) | Open |
-| [wailsapp/wails](https://github.com/wailsapp/wails) | [v2: nil-guard Application.Quit so pre-Run shutdown doesn't panic #5468](https://github.com/wailsapp/wails/pull/5468) | Open |
+| [wailsapp/wails](https://github.com/wailsapp/wails) | [v2: nil-guard Application.Quit so pre-Run shutdown doesn't panic #5468](https://github.com/wailsapp/wails/pull/5468) | Merged |
 | [grafana/k6](https://github.com/grafana/k6) | [fix: trim trailing slashes from cloud login stack URL #6001](https://github.com/grafana/k6/pull/6001) | Open |
 | [charmbracelet/colorprofile](https://github.com/charmbracelet/colorprofile) | [env: honor COLORTERM=truecolor inside tmux #83](https://github.com/charmbracelet/colorprofile/pull/83) | Open |
 | [charmbracelet/pop](https://github.com/charmbracelet/pop) | [allow SMTP without credentials for anonymous relays #167](https://github.com/charmbracelet/pop/pull/167) | Open |
@@ -143,6 +177,7 @@ Currently looking for software engineering internships or full-time roles.
 | [pallets/click](https://github.com/pallets/click) | [Don't break hyphenated options across lines in the usage line #3437](https://github.com/pallets/click/pull/3437) | Open |
 | [golang-jwt/jwt](https://github.com/golang-jwt/jwt) | [mapclaims: stop treating exp=0 as a missing claim #509](https://github.com/golang-jwt/jwt/pull/509) | Open |
 | [go-ldap/ldap](https://github.com/go-ldap/ldap) | [v3/control: replace unchecked type asserts in DecodeControl with comma-ok #589](https://github.com/go-ldap/ldap/pull/589) | Open |
+| [go-ldap/ldap](https://github.com/go-ldap/ldap) | [fix(conn): parse ldapi:// URLs per RFC 4516 #590](https://github.com/go-ldap/ldap/pull/590) | Open |
 | [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Open |
 | [emersion/go-imap](https://github.com/emersion/go-imap) | [imapclient: don't tear down the connection on dynamic COPYUID #755](https://github.com/emersion/go-imap/pull/755) | Open |
 | [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib) | [detectors/hetzner: respect context in Detect #8999](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/8999) | Open |
@@ -155,6 +190,65 @@ Currently looking for software engineering internships or full-time roles.
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [dd: don't silently swallow truncate failures #12340](https://github.com/uutils/coreutils/pull/12340) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [id: don't exit 1 when uid/gid name lookup fails in default output #12341](https://github.com/uutils/coreutils/pull/12341) | Open |
 | [livekit/rust-sdks](https://github.com/livekit/rust-sdks) | [webrtc-sys: don't panic when C++ hands us a malformed RtcError string #1098](https://github.com/livekit/rust-sdks/pull/1098) | Open |
+| [jj-vcs/jj](https://github.com/jj-vcs/jj) | [templates: expose builtin_workspace_list alias #9518](https://github.com/jj-vcs/jj/pull/9518) | Open |
+| [BurntSushi/walkdir](https://github.com/BurntSushi/walkdir) | [include parent directory path on mid-iteration errors #211](https://github.com/BurntSushi/walkdir/pull/211) | Open |
+| [risingwavelabs/risingwave](https://github.com/risingwavelabs/risingwave) | [test(interval): cover mid-string +/- separators #25676](https://github.com/risingwavelabs/risingwave/pull/25676) | Open |
+| [jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp) | [emit secondary tag handles (e.g. !!str) on Node::SetTag #1437](https://github.com/jbeder/yaml-cpp/pull/1437) | Open |
+| [quickwit-oss/tantivy](https://github.com/quickwit-oss/tantivy) | [postings: add a basic test for TermFrequencyRecorder #2934](https://github.com/quickwit-oss/tantivy/pull/2934) | Open |
+| [BurntSushi/fst](https://github.com/BurntSushi/fst) | [docs: fix memmap2 link and drop unused Streamer import #180](https://github.com/BurntSushi/fst/pull/180) | Open |
+| [datamade/usaddress](https://github.com/datamade/usaddress) | [stub: add RepeatedLabelError to \_\_init\_\_.pyi #408](https://github.com/datamade/usaddress/pull/408) | Open |
+| [openstates/openstates-core](https://github.com/openstates/openstates-core) | [Validate event document URLs as URIs #192](https://github.com/openstates/openstates-core/pull/192) | Open |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [Default the action categorizer Rule to case-insensitive matching #5672](https://github.com/openstates/openstates-scrapers/pull/5672) | Open |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [Drop redundant (?i) prefixes from utils.actions.Rule patterns #5673](https://github.com/openstates/openstates-scrapers/pull/5673) | Open |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: import Iterable from collections.abc #5674](https://github.com/openstates/openstates-scrapers/pull/5674) | Open |
+| [mysociety/mapit](https://github.com/mysociety/mapit) | [Return JSON for 404s, matching the rest of the API #444](https://github.com/mysociety/mapit/pull/444) | Open |
+| [mysociety/mapit](https://github.com/mysociety/mapit) | [Surface decode errors when reading feature names during import #445](https://github.com/mysociety/mapit/pull/445) | Open |
+| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [FAQ: point downtime guidance at the status page, not Twitter #5979](https://github.com/mysociety/fixmystreet/pull/5979) | Open |
+| [MobilityData/awesome-transit](https://github.com/MobilityData/awesome-transit) | [Update Dede entry; mark Instabus as no longer maintained #371](https://github.com/MobilityData/awesome-transit/pull/371) | Open |
+| [simonw/datasette](https://github.com/simonw/datasette) | [docs: mention WAL mode for concurrently written databases #2718](https://github.com/simonw/datasette/pull/2718) | Open |
+| [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Open |
+| [18F/charlie](https://github.com/18F/charlie) | [InclusionBot: move religious-tradition entries from Racist to Other #603](https://github.com/18F/charlie/pull/603) | Open |
+| [codeforboston/maple](https://github.com/codeforboston/maple) | [Remove showLLMFeatures feature flag #2142](https://github.com/codeforboston/maple/pull/2142) | Open |
+| [bloom-housing/bloom](https://github.com/bloom-housing/bloom) | [listing: skip amiChart findMany when no units carry an AMI chart #6316](https://github.com/bloom-housing/bloom/pull/6316) | Open |
+| [nycdb/nycdb](https://github.com/nycdb/nycdb) | [docs: cover scripts/test and create_dataset.py in the new-dataset guide #401](https://github.com/nycdb/nycdb/pull/401) | Open |
+| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Strip query strings when extracting Facebook/Instagram usernames #2392](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2392) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Allow 18-year-olds to enter their birth year #2752](https://github.com/DemocracyClub/yournextrepresentative/pull/2752) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Strip mailto: prefix from email identifiers #2753](https://github.com/DemocracyClub/yournextrepresentative/pull/2753) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Shuffle the open duplicate-suggestion list #2754](https://github.com/DemocracyClub/yournextrepresentative/pull/2754) | Open |
+| [openelections/openelections-core](https://github.com/openelections/openelections-core) | [bake: tell the user when there's nothing to bake #293](https://github.com/openelections/openelections-core/pull/293) | Open |
+| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Use Plaid Cymru's green for the party dot #2017](https://github.com/mysociety/theyworkforyou/pull/2017) | Open |
+| [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Stop relying on contributor order in update_contributors spec #9258](https://github.com/mysociety/alaveteli/pull/9258) | Open |
+| [BlinkTagInc/gtfs-to-html](https://github.com/BlinkTagInc/gtfs-to-html) | [Pin pbf to v3 to fix the missing dist/pbf.js error #199](https://github.com/BlinkTagInc/gtfs-to-html/pull/199) | Open |
+| [mysociety/mysoc-validator](https://github.com/mysociety/mysoc-validator) | [Don't choke on duplicate identifier rows in from_identifier #15](https://github.com/mysociety/mysoc-validator/pull/15) | Open |
+| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Fix 'seperate' typos in two comments #2018](https://github.com/mysociety/theyworkforyou/pull/2018) | Open |
+| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Clear emblem_url when a party drops its emblem upstream #2393](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2393) | Open |
+| [nycdb/nycdb](https://github.com/nycdb/nycdb) | [src/README: correct Python and Postgres minimums #402](https://github.com/nycdb/nycdb/pull/402) | Open |
+| [codeforboston/maple](https://github.com/codeforboston/maple) | [Send logged-out users to login when clicking Follow #2143](https://github.com/codeforboston/maple/pull/2143) | Open |
+| [openstates/pyopenstates](https://github.com/openstates/pyopenstates) | [Sync legislator/district docstrings with actual signatures #28](https://github.com/openstates/pyopenstates/pull/28) | Open |
+| [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Move setSelect into the Jcrop init callback on the photo crop page #9259](https://github.com/mysociety/alaveteli/pull/9259) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Fix 'seperate' / 'moemnt' typos in comments and docs #2755](https://github.com/DemocracyClub/yournextrepresentative/pull/2755) | Open |
+| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [Fix a few comment/doc typos #5980](https://github.com/mysociety/fixmystreet/pull/5980) | Open |
+| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Fix 'Idenfitier' and 'psuedo' typos on Party.ec_id #2394](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2394) | Open |
+| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [Don't redirect inspector form back to /report/update referer #5981](https://github.com/mysociety/fixmystreet/pull/5981) | Open |
+| [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Mask attachment HTML text nodes only, not href/src attributes #9260](https://github.com/mysociety/alaveteli/pull/9260) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Reject adding a person to two ballots from the same election #2756](https://github.com/DemocracyClub/yournextrepresentative/pull/2756) | Open |
+| [openstates/openstates.org](https://github.com/openstates/openstates.org) | [Validate lat/lon as floats before interpolating into the geo GraphQL query #463](https://github.com/openstates/openstates.org/pull/463) | Open |
+| [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Sweep up stale wikipedia_bio rows in the daily import #2395](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2395) | Open |
+| [openstates/openstates-core](https://github.com/openstates/openstates-core) | [Stop using deprecated datetime.utcnow() #193](https://github.com/openstates/openstates-core/pull/193) | Open |
+| [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Pick up replacement file's content_type before regenerating filename #9261](https://github.com/mysociety/alaveteli/pull/9261) | Open |
+| [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Skip diff_html for photo actions #2757](https://github.com/DemocracyClub/yournextrepresentative/pull/2757) | Open |
+| [nycdb/nycdb](https://github.com/nycdb/nycdb) | [List sql/data subdirectories in packages to silence build warnings #403](https://github.com/nycdb/nycdb/pull/403) | Open |
+| [CodeForPhilly/philly-ward-leaders](https://github.com/CodeForPhilly/philly-ward-leaders) | [Shrink font further on long ward-leader names #357](https://github.com/CodeForPhilly/philly-ward-leaders/pull/357) | Open |
+| [datamade/census](https://github.com/datamade/census) | [Switch ACS/SF1/PL endpoints on fields() too #168](https://github.com/datamade/census/pull/168) | Open |
+| [datamade/census](https://github.com/datamade/census) | [ACS5: restrict state_county_blockgroup to 2013+ #169](https://github.com/datamade/census/pull/169) | Open |
+| [datamade/django-councilmatic](https://github.com/datamade/django-councilmatic) | [Escape Solr-special chars and colons in RSS facet values #295](https://github.com/datamade/django-councilmatic/pull/295) | Open |
+| [datamade/parserator](https://github.com/datamade/parserator) | [docs: fix represention typo #55](https://github.com/datamade/parserator/pull/55) | Open |
+| [datamade/parserator](https://github.com/datamade/parserator) | [Skip XML comments and empty sequences in TrainingData iteration #56](https://github.com/datamade/parserator/pull/56) | Open |
+| [datamade/searchable-map-template-csv](https://github.com/datamade/searchable-map-template-csv) | [Skip CSV rows with empty or non-numeric lat/lng #33](https://github.com/datamade/searchable-map-template-csv/pull/33) | Open |
+| [datamade/cookiecutter-django-app](https://github.com/datamade/cookiecutter-django-app) | [Make flake8 pre-commit exclude a proper regex #15](https://github.com/datamade/cookiecutter-django-app/pull/15) | Open |
+| [datamade/chi-councilmatic](https://github.com/datamade/chi-councilmatic) | [get_legistar_link: rewrite stale chicago.legistar.com URLs to eLMS #430](https://github.com/datamade/chi-councilmatic/pull/430) | Open |
+
+</details>
 
 ## Projects
 
