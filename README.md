@@ -12,7 +12,7 @@ Bugs and features I shipped into widely-used Go libraries:
 - **[urfave/cli](https://github.com/urfave/cli)** ([#2328](https://github.com/urfave/cli/pull/2328)). Most-used CLI framework in Go. Pinned down the empty-positional-after-flag case with a regression test I ran into writing a different tool.
 - **[gocolly/colly](https://github.com/gocolly/colly)** ([#873](https://github.com/gocolly/colly/pull/873)). Web scraping framework. Dropped a deprecated `rand.Seed` call from `httpBackend.Init` that started warning under Go 1.20+.
 
-Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, and more. Full list collapsed at the bottom.
+Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, mySociety (MapIt, FixMyStreet, Alaveteli, TheyWorkForYou), DemocracyClub, Open States, OpenElections, NYCDB, and more. Full list collapsed at the bottom.
 
 <details>
 <summary>All PRs (open and merged)</summary>
@@ -74,7 +74,6 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [urfave/cli](https://github.com/urfave/cli) | [v3: yield the version flag's -v alias to a user-defined flag #2330](https://github.com/urfave/cli/pull/2330) | Open |
 | [go-jose/go-jose](https://github.com/go-jose/go-jose) | [json: report actual JSON kind in UnmarshalText type errors #232](https://github.com/go-jose/go-jose/pull/232) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [parser: keep grouping trailing documents after adjacent --- #877](https://github.com/goccy/go-yaml/pull/877) | Open |
-| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | [fix(nodejs): silently skip package.json files with invalid names #10668](https://github.com/aquasecurity/trivy/pull/10668) | Open |
 | [gorilla/schema](https://github.com/gorilla/schema) | [decoder: don't panic when path crosses an unexported pointer field #243](https://github.com/gorilla/schema/pull/243) | Open |
 | [gorilla/csrf](https://github.com/gorilla/csrf) | [csrf: reject Origin: null as an opaque origin #207](https://github.com/gorilla/csrf/pull/207) | Open |
 | [gorilla/sessions](https://github.com/gorilla/sessions) | [registry: don't panic when store.New returns a nil session #291](https://github.com/gorilla/sessions/pull/291) | Open |
@@ -83,7 +82,7 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [kataras/iris](https://github.com/kataras/iris) | [docs: fix broken Movies Service link in _examples README #2606](https://github.com/kataras/iris/pull/2606) | Open |
 | [mingrammer/flog](https://github.com/mingrammer/flog) | [drop deprecated rand.Seed call in main #70](https://github.com/mingrammer/flog/pull/70) | Open |
 | [valyala/fastjson](https://github.com/valyala/fastjson) | [util: replace deprecated reflect.StringHeader/SliceHeader #121](https://github.com/valyala/fastjson/pull/121) | Open |
-| [aymanbagabas/go-pty](https://github.com/aymanbagabas/go-pty) | [cmd_windows: return *exec.ExitError on non-zero exit #50](https://github.com/aymanbagabas/go-pty/pull/50) | Open |
+| [aymanbagabas/go-pty](https://github.com/aymanbagabas/go-pty) | [cmd_windows: return *exec.ExitError on non-zero exit #50](https://github.com/aymanbagabas/go-pty/pull/50) | Merged |
 | [bsm/redislock](https://github.com/bsm/redislock) | [obtain: wrap ctx error with ErrNotObtained when retry deadline hits #84](https://github.com/bsm/redislock/pull/84) | Open |
 | [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat: add Wbr element constructor #175](https://github.com/chasefleming/elem-go/pull/175) | Open |
 | [chasefleming/elem-go](https://github.com/chasefleming/elem-go) | [feat: add Track element constructor #176](https://github.com/chasefleming/elem-go/pull/176) | Open |
@@ -136,15 +135,15 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [hibiken/asynq](https://github.com/hibiken/asynq) | [recover from panics in user-provided callbacks #1134](https://github.com/hibiken/asynq/pull/1134) | Open |
 | [hibiken/asynq](https://github.com/hibiken/asynq) | [scheduler: don't log shared-connection close as an error #1135](https://github.com/hibiken/asynq/pull/1135) | Open |
 | [alecthomas/kong](https://github.com/alecthomas/kong) | [allow ${env} in the help template of a positional argument #599](https://github.com/alecthomas/kong/pull/599) | Open |
-| [alecthomas/kong](https://github.com/alecthomas/kong) | [fire AfterApply for env-only flags #600](https://github.com/alecthomas/kong/pull/600) | Open |
+| [alecthomas/kong](https://github.com/alecthomas/kong) | [fire AfterApply for env-only flags #600](https://github.com/alecthomas/kong/pull/600) | Merged |
 | [uber-go/fx](https://github.com/uber-go/fx) | [fix the error example to pass a constructor to fx.Provide #1290](https://github.com/uber-go/fx/pull/1290) | Open |
 | [muesli/reflow](https://github.com/muesli/reflow) | [dedent: respect zero-indent lines when computing the shared indent #83](https://github.com/muesli/reflow/pull/83) | Open |
 | [valyala/quicktemplate](https://github.com/valyala/quicktemplate) | [docs: install qtc via go install instead of the dropped go get -u #106](https://github.com/valyala/quicktemplate/pull/106) | Open |
 | [Masterminds/sprig](https://github.com/Masterminds/sprig) | [add a test for the mod helper #478](https://github.com/Masterminds/sprig/pull/478) | Open |
 | [Masterminds/sprig](https://github.com/Masterminds/sprig) | [docs: clarify that seq returns a string, not an integer slice #479](https://github.com/Masterminds/sprig/pull/479) | Open |
 | [go-task/slim-sprig](https://github.com/go-task/slim-sprig) | [drop deprecated rand.Seed init hook #24](https://github.com/go-task/slim-sprig/pull/24) | Open |
-| [tucnak/telebot](https://github.com/tucnak/telebot) | [errors: redact bot token from wrapped transport errors #809](https://github.com/tucnak/telebot/pull/809) | Open |
-| [tucnak/telebot](https://github.com/tucnak/telebot) | [fix(file): default the multipart filename to the on-disk basename #810](https://github.com/tucnak/telebot/pull/810) | Open |
+| [tucnak/telebot](https://github.com/tucnak/telebot) | [errors: redact bot token from wrapped transport errors #809](https://github.com/tucnak/telebot/pull/809) | Merged |
+| [tucnak/telebot](https://github.com/tucnak/telebot) | [fix(file): default the multipart filename to the on-disk basename #810](https://github.com/tucnak/telebot/pull/810) | Merged |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [db unarchive: suggest the group unarchive command when applicable #1041](https://github.com/tursodatabase/turso-cli/pull/1041) | Open |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [from-csv: print sqlite's stderr as text instead of hex #1042](https://github.com/tursodatabase/turso-cli/pull/1042) | Open |
 | [tursodatabase/turso-cli](https://github.com/tursodatabase/turso-cli) | [db create: derive group from source db when forking #1043](https://github.com/tursodatabase/turso-cli/pull/1043) | Open |
@@ -174,17 +173,16 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [charmbracelet/glow](https://github.com/charmbracelet/glow) | [fix: expand ~ in style path from glow.yml #949](https://github.com/charmbracelet/glow/pull/949) | Open |
 | [charmbracelet/gum](https://github.com/charmbracelet/gum) | [fix(spin): drain PTY copy goroutines before reading stdout/stderr #1075](https://github.com/charmbracelet/gum/pull/1075) | Open |
 | [charmbracelet/vhs](https://github.com/charmbracelet/vhs) | [kill ttyd on early Evaluate exit and on Start failure #752](https://github.com/charmbracelet/vhs/pull/752) | Open |
-| [pallets/click](https://github.com/pallets/click) | [Don't break hyphenated options across lines in the usage line #3437](https://github.com/pallets/click/pull/3437) | Open |
 | [golang-jwt/jwt](https://github.com/golang-jwt/jwt) | [mapclaims: stop treating exp=0 as a missing claim #509](https://github.com/golang-jwt/jwt/pull/509) | Open |
-| [go-ldap/ldap](https://github.com/go-ldap/ldap) | [v3/control: replace unchecked type asserts in DecodeControl with comma-ok #589](https://github.com/go-ldap/ldap/pull/589) | Open |
+| [go-ldap/ldap](https://github.com/go-ldap/ldap) | [v3/control: replace unchecked type asserts in DecodeControl with comma-ok #589](https://github.com/go-ldap/ldap/pull/589) | Merged |
 | [go-ldap/ldap](https://github.com/go-ldap/ldap) | [fix(conn): parse ldapi:// URLs per RFC 4516 #590](https://github.com/go-ldap/ldap/pull/590) | Open |
-| [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Open |
+| [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Merged |
 | [emersion/go-imap](https://github.com/emersion/go-imap) | [imapclient: don't tear down the connection on dynamic COPYUID #755](https://github.com/emersion/go-imap/pull/755) | Open |
 | [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib) | [detectors/hetzner: respect context in Detect #8999](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/8999) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [sort: don't accept leading '+' in numeric (-n) sort #12336](https://github.com/uutils/coreutils/pull/12336) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [more: swap -f and -l short flags to match GNU/util-linux #12337](https://github.com/uutils/coreutils/pull/12337) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [chmod: report Permission denied instead of No such file when stat fails #12338](https://github.com/uutils/coreutils/pull/12338) | Open |
-| [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [remove: don't fail when manifest.toml is missing #5721](https://github.com/gleam-lang/gleam/pull/5721) | Open |
+| [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [remove: don't fail when manifest.toml is missing #5721](https://github.com/gleam-lang/gleam/pull/5721) | Merged |
 | [cross-rs/cross](https://github.com/cross-rs/cross) | [shared: point users at cargo and cross-toolchains in no-image error #1775](https://github.com/cross-rs/cross/pull/1775) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [nohup: create nohup.out with mode 0600 #12339](https://github.com/uutils/coreutils/pull/12339) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [dd: don't silently swallow truncate failures #12340](https://github.com/uutils/coreutils/pull/12340) | Open |
@@ -215,7 +213,7 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Allow 18-year-olds to enter their birth year #2752](https://github.com/DemocracyClub/yournextrepresentative/pull/2752) | Open |
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Strip mailto: prefix from email identifiers #2753](https://github.com/DemocracyClub/yournextrepresentative/pull/2753) | Open |
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Shuffle the open duplicate-suggestion list #2754](https://github.com/DemocracyClub/yournextrepresentative/pull/2754) | Open |
-| [openelections/openelections-core](https://github.com/openelections/openelections-core) | [bake: tell the user when there's nothing to bake #293](https://github.com/openelections/openelections-core/pull/293) | Open |
+| [openelections/openelections-core](https://github.com/openelections/openelections-core) | [bake: tell the user when there's nothing to bake #293](https://github.com/openelections/openelections-core/pull/293) | Merged |
 | [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Use Plaid Cymru's green for the party dot #2017](https://github.com/mysociety/theyworkforyou/pull/2017) | Open |
 | [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Stop relying on contributor order in update_contributors spec #9258](https://github.com/mysociety/alaveteli/pull/9258) | Open |
 | [BlinkTagInc/gtfs-to-html](https://github.com/BlinkTagInc/gtfs-to-html) | [Pin pbf to v3 to fix the missing dist/pbf.js error #199](https://github.com/BlinkTagInc/gtfs-to-html/pull/199) | Open |
@@ -247,6 +245,18 @@ Open and in review: ~150 more PRs across ~90 repos, including Tailscale, LiveKit
 | [datamade/searchable-map-template-csv](https://github.com/datamade/searchable-map-template-csv) | [Skip CSV rows with empty or non-numeric lat/lng #33](https://github.com/datamade/searchable-map-template-csv/pull/33) | Open |
 | [datamade/cookiecutter-django-app](https://github.com/datamade/cookiecutter-django-app) | [Make flake8 pre-commit exclude a proper regex #15](https://github.com/datamade/cookiecutter-django-app/pull/15) | Open |
 | [datamade/chi-councilmatic](https://github.com/datamade/chi-councilmatic) | [get_legistar_link: rewrite stale chicago.legistar.com URLs to eLMS #430](https://github.com/datamade/chi-councilmatic/pull/430) | Open |
+| [gobuffalo/fizz](https://github.com/gobuffalo/fizz) | [translators/postgres: respect null: false in change_column #144](https://github.com/gobuffalo/fizz/pull/144) | Open |
+| [wagoodman/dive](https://github.com/wagoodman/dive) | [fix(efficiency): report reclaimable bytes, not the sum of every copy #696](https://github.com/wagoodman/dive/pull/696) | Open |
+| [schollz/croc](https://github.com/schollz/croc) | [Dockerfile: bump builder image to golang:1.25 #1108](https://github.com/schollz/croc/pull/1108) | Open |
+| [SchemaStore/schemastore](https://github.com/SchemaStore/schemastore) | [claude-code-settings: add MultiEdit to permission rule regex #5701](https://github.com/SchemaStore/schemastore/pull/5701) | Open |
+| [cosmos/cosmos-sdk](https://github.com/cosmos/cosmos-sdk) | [types/query: saturate Paginate end when offset+limit overflows #26430](https://github.com/cosmos/cosmos-sdk/pull/26430) | Open |
+| [elastic/beats](https://github.com/elastic/beats) | [filebeat: nil-check UDP RemoteAddr before formatting in debug log #50770](https://github.com/elastic/beats/pull/50770) | Open |
+| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [scanner: bump offset past '#' so post-comment tokens land at correct Position.Offset #883](https://github.com/goccy/go-yaml/pull/883) | Open |
+| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [parser: keep parsing after a comment-only document #884](https://github.com/goccy/go-yaml/pull/884) | Open |
+| [gorilla/securecookie](https://github.com/gorilla/securecookie) | [Add SecureCookie.Err for surfacing deferred configuration errors #92](https://github.com/gorilla/securecookie/pull/92) | Open |
+| [google/go-jsonnet](https://github.com/google/go-jsonnet) | [parseYaml: drop the stray null when the stream starts with comments #875](https://github.com/google/go-jsonnet/pull/875) | Open |
+| [influxdata/influxdb-client-go](https://github.com/influxdata/influxdb-client-go) | [write/service: handle a nil URL from url.Parse without panicking #427](https://github.com/influxdata/influxdb-client-go/pull/427) | Open |
+| [asaskevich/govalidator](https://github.com/asaskevich/govalidator) | [Accept domain labels with multiple consecutive hyphens in IsURL #513](https://github.com/asaskevich/govalidator/pull/513) | Open |
 
 </details>
 
