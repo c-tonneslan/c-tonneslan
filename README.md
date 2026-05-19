@@ -179,6 +179,7 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Merged |
 | [emersion/go-imap](https://github.com/emersion/go-imap) | [imapclient: don't tear down the connection on dynamic COPYUID #755](https://github.com/emersion/go-imap/pull/755) | Open |
 | [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib) | [detectors/hetzner: respect context in Detect #8999](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/8999) | Open |
+| [hetznercloud/hcloud-go](https://github.com/hetznercloud/hcloud-go) | [metadata: add context-aware Client methods #852](https://github.com/hetznercloud/hcloud-go/pull/852) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [sort: don't accept leading '+' in numeric (-n) sort #12336](https://github.com/uutils/coreutils/pull/12336) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [more: swap -f and -l short flags to match GNU/util-linux #12337](https://github.com/uutils/coreutils/pull/12337) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [chmod: report Permission denied instead of No such file when stat fails #12338](https://github.com/uutils/coreutils/pull/12338) | Open |
@@ -201,7 +202,7 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: import Iterable from collections.abc #5674](https://github.com/openstates/openstates-scrapers/pull/5674) | Open |
 | [mysociety/mapit](https://github.com/mysociety/mapit) | [Return JSON for 404s, matching the rest of the API #444](https://github.com/mysociety/mapit/pull/444) | Open |
 | [mysociety/mapit](https://github.com/mysociety/mapit) | [Surface decode errors when reading feature names during import #445](https://github.com/mysociety/mapit/pull/445) | Open |
-| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [FAQ: point downtime guidance at the status page, not Twitter #5979](https://github.com/mysociety/fixmystreet/pull/5979) | Open |
+| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [FAQ: point downtime guidance at the status page, not Twitter #5979](https://github.com/mysociety/fixmystreet/pull/5979) | Merged |
 | [MobilityData/awesome-transit](https://github.com/MobilityData/awesome-transit) | [Update Dede entry; mark Instabus as no longer maintained #371](https://github.com/MobilityData/awesome-transit/pull/371) | Open |
 | [simonw/datasette](https://github.com/simonw/datasette) | [docs: mention WAL mode for concurrently written databases #2718](https://github.com/simonw/datasette/pull/2718) | Open |
 | [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Open |
@@ -214,11 +215,11 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Strip mailto: prefix from email identifiers #2753](https://github.com/DemocracyClub/yournextrepresentative/pull/2753) | Open |
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Shuffle the open duplicate-suggestion list #2754](https://github.com/DemocracyClub/yournextrepresentative/pull/2754) | Open |
 | [openelections/openelections-core](https://github.com/openelections/openelections-core) | [bake: tell the user when there's nothing to bake #293](https://github.com/openelections/openelections-core/pull/293) | Merged |
-| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Use Plaid Cymru's green for the party dot #2017](https://github.com/mysociety/theyworkforyou/pull/2017) | Open |
+| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Use Plaid Cymru's green for the party dot #2017](https://github.com/mysociety/theyworkforyou/pull/2017) | Merged |
 | [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Stop relying on contributor order in update_contributors spec #9258](https://github.com/mysociety/alaveteli/pull/9258) | Open |
 | [BlinkTagInc/gtfs-to-html](https://github.com/BlinkTagInc/gtfs-to-html) | [Pin pbf to v3 to fix the missing dist/pbf.js error #199](https://github.com/BlinkTagInc/gtfs-to-html/pull/199) | Open |
 | [mysociety/mysoc-validator](https://github.com/mysociety/mysoc-validator) | [Don't choke on duplicate identifier rows in from_identifier #15](https://github.com/mysociety/mysoc-validator/pull/15) | Open |
-| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Fix 'seperate' typos in two comments #2018](https://github.com/mysociety/theyworkforyou/pull/2018) | Open |
+| [mysociety/theyworkforyou](https://github.com/mysociety/theyworkforyou) | [Fix 'seperate' typos in two comments #2018](https://github.com/mysociety/theyworkforyou/pull/2018) | Merged |
 | [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Clear emblem_url when a party drops its emblem upstream #2393](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2393) | Open |
 | [nycdb/nycdb](https://github.com/nycdb/nycdb) | [src/README: correct Python and Postgres minimums #402](https://github.com/nycdb/nycdb/pull/402) | Open |
 | [codeforboston/maple](https://github.com/codeforboston/maple) | [Send logged-out users to login when clicking Follow #2143](https://github.com/codeforboston/maple/pull/2143) | Open |
@@ -247,7 +248,7 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [datamade/chi-councilmatic](https://github.com/datamade/chi-councilmatic) | [get_legistar_link: rewrite stale chicago.legistar.com URLs to eLMS #430](https://github.com/datamade/chi-councilmatic/pull/430) | Open |
 | [gobuffalo/fizz](https://github.com/gobuffalo/fizz) | [translators/postgres: respect null: false in change_column #144](https://github.com/gobuffalo/fizz/pull/144) | Open |
 | [wagoodman/dive](https://github.com/wagoodman/dive) | [fix(efficiency): report reclaimable bytes, not the sum of every copy #696](https://github.com/wagoodman/dive/pull/696) | Open |
-| [schollz/croc](https://github.com/schollz/croc) | [Dockerfile: bump builder image to golang:1.25 #1108](https://github.com/schollz/croc/pull/1108) | Open |
+| [schollz/croc](https://github.com/schollz/croc) | [Dockerfile: bump builder image to golang:1.25 #1108](https://github.com/schollz/croc/pull/1108) | Merged |
 | [SchemaStore/schemastore](https://github.com/SchemaStore/schemastore) | [claude-code-settings: add MultiEdit to permission rule regex #5701](https://github.com/SchemaStore/schemastore/pull/5701) | Open |
 | [cosmos/cosmos-sdk](https://github.com/cosmos/cosmos-sdk) | [types/query: saturate Paginate end when offset+limit overflows #26430](https://github.com/cosmos/cosmos-sdk/pull/26430) | Open |
 | [elastic/beats](https://github.com/elastic/beats) | [filebeat: nil-check UDP RemoteAddr before formatting in debug log #50770](https://github.com/elastic/beats/pull/50770) | Open |
