@@ -12,7 +12,7 @@ Bugs and features I shipped into widely-used Go libraries:
 - **[urfave/cli](https://github.com/urfave/cli)** ([#2328](https://github.com/urfave/cli/pull/2328)). Most-used CLI framework in Go. Pinned down the empty-positional-after-flag case with a regression test I ran into writing a different tool.
 - **[gocolly/colly](https://github.com/gocolly/colly)** ([#873](https://github.com/gocolly/colly/pull/873)). Web scraping framework. Dropped a deprecated `rand.Seed` call from `httpBackend.Init` that started warning under Go 1.20+.
 
-Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, mySociety (MapIt, FixMyStreet, Alaveteli, TheyWorkForYou), DemocracyClub, Open States, OpenElections, NYCDB, and more. Full list collapsed at the bottom.
+Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, mySociety (MapIt, FixMyStreet, Alaveteli, TheyWorkForYou), DemocracyClub, Open States, OpenElections, NYCDB, and more. Full list collapsed at the bottom.
 
 <details>
 <summary>All PRs (open and merged)</summary>
@@ -109,7 +109,6 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [charmbracelet/x](https://github.com/charmbracelet/x) | [fix(ansi): emit DECSWT/DECSIN with correct OSC numbers and ST #865](https://github.com/charmbracelet/x/pull/865) | Open |
 | [samber/lo](https://github.com/samber/lo) | [docs(concat): example uses lo.Concat, not lo.Flatten #889](https://github.com/samber/lo/pull/889) | Open |
 | [dustin/go-humanize](https://github.com/dustin/go-humanize) | [si: accept the Greek letter mu as an alias for µ in ParseSI #150](https://github.com/dustin/go-humanize/pull/150) | Open |
-| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [scanner: bump offset over the '#' in scanComment #878](https://github.com/goccy/go-yaml/pull/878) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [printer: check Alias not Anchor in the AliasType branch #879](https://github.com/goccy/go-yaml/pull/879) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [ast: keep trailing blank lines when rendering \|+ literals #880](https://github.com/goccy/go-yaml/pull/880) | Open |
 | [goccy/go-yaml](https://github.com/goccy/go-yaml) | [playground: add Docs link to pkg.go.dev #881](https://github.com/goccy/go-yaml/pull/881) | Open |
@@ -179,13 +178,13 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Merged |
 | [emersion/go-imap](https://github.com/emersion/go-imap) | [imapclient: don't tear down the connection on dynamic COPYUID #755](https://github.com/emersion/go-imap/pull/755) | Open |
 | [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib) | [detectors/hetzner: respect context in Detect #8999](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/8999) | Open |
-| [hetznercloud/hcloud-go](https://github.com/hetznercloud/hcloud-go) | [metadata: add context-aware Client methods #852](https://github.com/hetznercloud/hcloud-go/pull/852) | Open |
+| [hetznercloud/hcloud-go](https://github.com/hetznercloud/hcloud-go) | [metadata: add context-aware Client methods #852](https://github.com/hetznercloud/hcloud-go/pull/852) | Merged |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [sort: don't accept leading '+' in numeric (-n) sort #12336](https://github.com/uutils/coreutils/pull/12336) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [more: swap -f and -l short flags to match GNU/util-linux #12337](https://github.com/uutils/coreutils/pull/12337) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [chmod: report Permission denied instead of No such file when stat fails #12338](https://github.com/uutils/coreutils/pull/12338) | Open |
 | [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [remove: don't fail when manifest.toml is missing #5721](https://github.com/gleam-lang/gleam/pull/5721) | Merged |
 | [cross-rs/cross](https://github.com/cross-rs/cross) | [shared: point users at cargo and cross-toolchains in no-image error #1775](https://github.com/cross-rs/cross/pull/1775) | Open |
-| [uutils/coreutils](https://github.com/uutils/coreutils) | [nohup: create nohup.out with mode 0600 #12339](https://github.com/uutils/coreutils/pull/12339) | Open |
+| [uutils/coreutils](https://github.com/uutils/coreutils) | [nohup: create nohup.out with mode 0600 #12339](https://github.com/uutils/coreutils/pull/12339) | Merged |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [dd: don't silently swallow truncate failures #12340](https://github.com/uutils/coreutils/pull/12340) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [id: don't exit 1 when uid/gid name lookup fails in default output #12341](https://github.com/uutils/coreutils/pull/12341) | Open |
 | [livekit/rust-sdks](https://github.com/livekit/rust-sdks) | [webrtc-sys: don't panic when C++ hands us a malformed RtcError string #1098](https://github.com/livekit/rust-sdks/pull/1098) | Open |
@@ -199,13 +198,13 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [openstates/openstates-core](https://github.com/openstates/openstates-core) | [Validate event document URLs as URIs #192](https://github.com/openstates/openstates-core/pull/192) | Open |
 | [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [Default the action categorizer Rule to case-insensitive matching #5672](https://github.com/openstates/openstates-scrapers/pull/5672) | Open |
 | [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [Drop redundant (?i) prefixes from utils.actions.Rule patterns #5673](https://github.com/openstates/openstates-scrapers/pull/5673) | Open |
-| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: import Iterable from collections.abc #5674](https://github.com/openstates/openstates-scrapers/pull/5674) | Open |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: import Iterable from collections.abc #5674](https://github.com/openstates/openstates-scrapers/pull/5674) | Merged |
 | [mysociety/mapit](https://github.com/mysociety/mapit) | [Return JSON for 404s, matching the rest of the API #444](https://github.com/mysociety/mapit/pull/444) | Open |
 | [mysociety/mapit](https://github.com/mysociety/mapit) | [Surface decode errors when reading feature names during import #445](https://github.com/mysociety/mapit/pull/445) | Open |
 | [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [FAQ: point downtime guidance at the status page, not Twitter #5979](https://github.com/mysociety/fixmystreet/pull/5979) | Merged |
 | [MobilityData/awesome-transit](https://github.com/MobilityData/awesome-transit) | [Update Dede entry; mark Instabus as no longer maintained #371](https://github.com/MobilityData/awesome-transit/pull/371) | Open |
 | [simonw/datasette](https://github.com/simonw/datasette) | [docs: mention WAL mode for concurrently written databases #2718](https://github.com/simonw/datasette/pull/2718) | Open |
-| [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Open |
+| [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Merged |
 | [18F/charlie](https://github.com/18F/charlie) | [InclusionBot: move religious-tradition entries from Racist to Other #603](https://github.com/18F/charlie/pull/603) | Open |
 | [codeforboston/maple](https://github.com/codeforboston/maple) | [Remove showLLMFeatures feature flag #2142](https://github.com/codeforboston/maple/pull/2142) | Open |
 | [bloom-housing/bloom](https://github.com/bloom-housing/bloom) | [listing: skip amiChart findMany when no units carry an AMI chart #6316](https://github.com/bloom-housing/bloom/pull/6316) | Open |
@@ -226,7 +225,7 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [openstates/pyopenstates](https://github.com/openstates/pyopenstates) | [Sync legislator/district docstrings with actual signatures #28](https://github.com/openstates/pyopenstates/pull/28) | Open |
 | [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Move setSelect into the Jcrop init callback on the photo crop page #9259](https://github.com/mysociety/alaveteli/pull/9259) | Open |
 | [DemocracyClub/yournextrepresentative](https://github.com/DemocracyClub/yournextrepresentative) | [Fix 'seperate' / 'moemnt' typos in comments and docs #2755](https://github.com/DemocracyClub/yournextrepresentative/pull/2755) | Open |
-| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [Fix a few comment/doc typos #5980](https://github.com/mysociety/fixmystreet/pull/5980) | Open |
+| [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [Fix a few comment/doc typos #5980](https://github.com/mysociety/fixmystreet/pull/5980) | Merged |
 | [DemocracyClub/WhoCanIVoteFor](https://github.com/DemocracyClub/WhoCanIVoteFor) | [Fix 'Idenfitier' and 'psuedo' typos on Party.ec_id #2394](https://github.com/DemocracyClub/WhoCanIVoteFor/pull/2394) | Open |
 | [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [Don't redirect inspector form back to /report/update referer #5981](https://github.com/mysociety/fixmystreet/pull/5981) | Open |
 | [mysociety/alaveteli](https://github.com/mysociety/alaveteli) | [Mask attachment HTML text nodes only, not href/src attributes #9260](https://github.com/mysociety/alaveteli/pull/9260) | Open |
@@ -247,18 +246,30 @@ Open and in review: ~280 more PRs across ~175 repos, including Tailscale, LiveKi
 | [datamade/cookiecutter-django-app](https://github.com/datamade/cookiecutter-django-app) | [Make flake8 pre-commit exclude a proper regex #15](https://github.com/datamade/cookiecutter-django-app/pull/15) | Open |
 | [datamade/chi-councilmatic](https://github.com/datamade/chi-councilmatic) | [get_legistar_link: rewrite stale chicago.legistar.com URLs to eLMS #430](https://github.com/datamade/chi-councilmatic/pull/430) | Open |
 | [gobuffalo/fizz](https://github.com/gobuffalo/fizz) | [translators/postgres: respect null: false in change_column #144](https://github.com/gobuffalo/fizz/pull/144) | Open |
-| [wagoodman/dive](https://github.com/wagoodman/dive) | [fix(efficiency): report reclaimable bytes, not the sum of every copy #696](https://github.com/wagoodman/dive/pull/696) | Open |
 | [schollz/croc](https://github.com/schollz/croc) | [Dockerfile: bump builder image to golang:1.25 #1108](https://github.com/schollz/croc/pull/1108) | Merged |
 | [SchemaStore/schemastore](https://github.com/SchemaStore/schemastore) | [claude-code-settings: add MultiEdit to permission rule regex #5701](https://github.com/SchemaStore/schemastore/pull/5701) | Open |
 | [cosmos/cosmos-sdk](https://github.com/cosmos/cosmos-sdk) | [types/query: saturate Paginate end when offset+limit overflows #26430](https://github.com/cosmos/cosmos-sdk/pull/26430) | Open |
 | [elastic/beats](https://github.com/elastic/beats) | [filebeat: nil-check UDP RemoteAddr before formatting in debug log #50770](https://github.com/elastic/beats/pull/50770) | Open |
-| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [scanner: bump offset past '#' so post-comment tokens land at correct Position.Offset #883](https://github.com/goccy/go-yaml/pull/883) | Open |
-| [goccy/go-yaml](https://github.com/goccy/go-yaml) | [parser: keep parsing after a comment-only document #884](https://github.com/goccy/go-yaml/pull/884) | Open |
 | [gorilla/securecookie](https://github.com/gorilla/securecookie) | [Add SecureCookie.Err for surfacing deferred configuration errors #92](https://github.com/gorilla/securecookie/pull/92) | Open |
 | [google/go-jsonnet](https://github.com/google/go-jsonnet) | [parseYaml: drop the stray null when the stream starts with comments #875](https://github.com/google/go-jsonnet/pull/875) | Open |
 | [influxdata/influxdb-client-go](https://github.com/influxdata/influxdb-client-go) | [write/service: handle a nil URL from url.Parse without panicking #427](https://github.com/influxdata/influxdb-client-go/pull/427) | Open |
 | [asaskevich/govalidator](https://github.com/asaskevich/govalidator) | [Accept domain labels with multiple consecutive hyphens in IsURL #513](https://github.com/asaskevich/govalidator/pull/513) | Open |
+| [exoscale/terraform-provider-exoscale](https://github.com/exoscale/terraform-provider-exoscale) | [instance: don't panic reading an instance destroyed out-of-band #536](https://github.com/exoscale/terraform-provider-exoscale/pull/536) | Open |
+| [quinn-rs/quinn](https://github.com/quinn-rs/quinn) | [streams: reject STOP_SENDING and MAX_STREAM_DATA beyond the stream limit #2652](https://github.com/quinn-rs/quinn/pull/2652) | Open |
 
+| [alecthomas/kong](https://github.com/alecthomas/kong) | [Support the env tag on positional arguments (closes #556) #601](https://github.com/alecthomas/kong/pull/601) | Merged |
+| [coredns/coredns](https://github.com/coredns/coredns) | [plugin/file: canonicalize escape form in owner names #8109](https://github.com/coredns/coredns/pull/8109) | Merged |
+| [freelawproject/courts-db](https://github.com/freelawproject/courts-db) | [Fix 'Washignton' typo in courts.json locations #134](https://github.com/freelawproject/courts-db/pull/134) | Merged |
+| [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) | [dsn: default Net to tcp in NewConfig so Addr-only configs round-trip #1770](https://github.com/go-sql-driver/mysql/pull/1770) | Merged |
+| [openelections/openelections-core](https://github.com/openelections/openelections-core) | [Narrow bare excepts in id/oh datasources #296](https://github.com/openelections/openelections-core/pull/296) | Merged |
+| [openelections/openelections-data-co](https://github.com/openelections/openelections-data-co) | [clarity_parser: narrow bare except to Exception #72](https://github.com/openelections/openelections-data-co/pull/72) | Merged |
+| [openelections/openelections-data-nh](https://github.com/openelections/openelections-data-nh) | [Narrow bare excepts to Exception in the 2012 NH scrapers #38](https://github.com/openelections/openelections-data-nh/pull/38) | Merged |
+| [openelections/openelections-data-pa](https://github.com/openelections/openelections-data-pa) | [readme: update year range from 2000-2012 to 2000 onward #171](https://github.com/openelections/openelections-data-pa/pull/171) | Merged |
+| [openelections/openelections-data-pa](https://github.com/openelections/openelections-data-pa) | [clarity_parser: narrow bare excepts to Exception #172](https://github.com/openelections/openelections-data-pa/pull/172) | Merged |
+| [openelections/openelections-data-wi](https://github.com/openelections/openelections-data-wi) | [Drop dead Travis badge from README #75](https://github.com/openelections/openelections-data-wi/pull/75) | Merged |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [nh: drop deprecated datetime.utcnow() in get_session_list #5675](https://github.com/openstates/openstates-scrapers/pull/5675) | Merged |
+| [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: drop six.string_types in favour of str #5676](https://github.com/openstates/openstates-scrapers/pull/5676) | Merged |
+| [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [csharp: use Random.Shared for svix-req-id #2335](https://github.com/svix/svix-webhooks/pull/2335) | Merged |
 </details>
 
 ## Projects
