@@ -183,6 +183,8 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [more: swap -f and -l short flags to match GNU/util-linux #12337](https://github.com/uutils/coreutils/pull/12337) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [chmod: report Permission denied instead of No such file when stat fails #12338](https://github.com/uutils/coreutils/pull/12338) | Open |
 | [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [remove: don't fail when manifest.toml is missing #5721](https://github.com/gleam-lang/gleam/pull/5721) | Merged |
+| [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [Simplify the failed Hex API key decryption error message #5741](https://github.com/gleam-lang/gleam/pull/5741) | Open |
+| [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | [Show a readable error when reverting a release that's too old #5742](https://github.com/gleam-lang/gleam/pull/5742) | Open |
 | [cross-rs/cross](https://github.com/cross-rs/cross) | [shared: point users at cargo and cross-toolchains in no-image error #1775](https://github.com/cross-rs/cross/pull/1775) | Open |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [nohup: create nohup.out with mode 0600 #12339](https://github.com/uutils/coreutils/pull/12339) | Merged |
 | [uutils/coreutils](https://github.com/uutils/coreutils) | [dd: don't silently swallow truncate failures #12340](https://github.com/uutils/coreutils/pull/12340) | Open |
@@ -270,6 +272,8 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [nh: drop deprecated datetime.utcnow() in get_session_list #5675](https://github.com/openstates/openstates-scrapers/pull/5675) | Merged |
 | [openstates/openstates-scrapers](https://github.com/openstates/openstates-scrapers) | [utils.actions: drop six.string_types in favour of str #5676](https://github.com/openstates/openstates-scrapers/pull/5676) | Merged |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [csharp: use Random.Shared for svix-req-id #2335](https://github.com/svix/svix-webhooks/pull/2335) | Merged |
+| [bloomberg/pystack](https://github.com/bloomberg/pystack) | [conftest: exit with a clear message when ptrace_scope blocks the test suite #309](https://github.com/bloomberg/pystack/pull/309) | Merged |
+| [tobymao/sqlglot](https://github.com/tobymao/sqlglot) | [Raise ParseError, not IndexError, on an unclosed JSONPath filter #7665](https://github.com/tobymao/sqlglot/pull/7665) | Merged |
 </details>
 
 ## Projects
