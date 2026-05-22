@@ -206,6 +206,10 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [mysociety/fixmystreet](https://github.com/mysociety/fixmystreet) | [FAQ: point downtime guidance at the status page, not Twitter #5979](https://github.com/mysociety/fixmystreet/pull/5979) | Merged |
 | [MobilityData/awesome-transit](https://github.com/MobilityData/awesome-transit) | [Update Dede entry; mark Instabus as no longer maintained #371](https://github.com/MobilityData/awesome-transit/pull/371) | Open |
 | [simonw/datasette](https://github.com/simonw/datasette) | [docs: mention WAL mode for concurrently written databases #2718](https://github.com/simonw/datasette/pull/2718) | Open |
+| [simonw/json-flatten](https://github.com/simonw/json-flatten) | [Fix unflatten crashing on keys that contain a dollar sign #11](https://github.com/simonw/json-flatten/pull/11) | Open |
+| [simonw/symbex](https://github.com/simonw/symbex) | [Render dotted base classes and metaclass values instead of dropping them #49](https://github.com/simonw/symbex/pull/49) | Open |
+| [huggingface/accelerate](https://github.com/huggingface/accelerate) | [logging: stop warning_once from crashing on unhashable kwargs like extra={...} #4047](https://github.com/huggingface/accelerate/pull/4047) | Open |
+| [huggingface/tokenizers](https://github.com/huggingface/tokenizers) | [Fix typo in EncodingVisualizer.annotation_converter attribute #2068](https://github.com/huggingface/tokenizers/pull/2068) | Open |
 | [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Merged |
 | [18F/charlie](https://github.com/18F/charlie) | [InclusionBot: move religious-tradition entries from Racist to Other #603](https://github.com/18F/charlie/pull/603) | Open |
 | [codeforboston/maple](https://github.com/codeforboston/maple) | [Remove showLLMFeatures feature flag #2142](https://github.com/codeforboston/maple/pull/2142) | Open |
