@@ -174,7 +174,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [charmbracelet/vhs](https://github.com/charmbracelet/vhs) | [kill ttyd on early Evaluate exit and on Start failure #752](https://github.com/charmbracelet/vhs/pull/752) | Open |
 | [golang-jwt/jwt](https://github.com/golang-jwt/jwt) | [mapclaims: stop treating exp=0 as a missing claim #509](https://github.com/golang-jwt/jwt/pull/509) | Open |
 | [go-ldap/ldap](https://github.com/go-ldap/ldap) | [v3/control: replace unchecked type asserts in DecodeControl with comma-ok #589](https://github.com/go-ldap/ldap/pull/589) | Merged |
-| [go-ldap/ldap](https://github.com/go-ldap/ldap) | [fix(conn): parse ldapi:// URLs per RFC 4516 #590](https://github.com/go-ldap/ldap/pull/590) | Open |
+| [go-ldap/ldap](https://github.com/go-ldap/ldap) | [fix(conn): parse ldapi:// URLs per RFC 4516 #590](https://github.com/go-ldap/ldap/pull/590) | Merged |
 | [cli/cli](https://github.com/cli/cli) | [docs: drop --repo gh-cli from dnf install lines #13444](https://github.com/cli/cli/pull/13444) | Merged |
 | [emersion/go-imap](https://github.com/emersion/go-imap) | [imapclient: don't tear down the connection on dynamic COPYUID #755](https://github.com/emersion/go-imap/pull/755) | Open |
 | [open-telemetry/opentelemetry-go-contrib](https://github.com/open-telemetry/opentelemetry-go-contrib) | [detectors/hetzner: respect context in Detect #8999](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/8999) | Open |
@@ -210,6 +210,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [simonw/symbex](https://github.com/simonw/symbex) | [Render dotted base classes and metaclass values instead of dropping them #49](https://github.com/simonw/symbex/pull/49) | Open |
 | [huggingface/accelerate](https://github.com/huggingface/accelerate) | [logging: stop warning_once from crashing on unhashable kwargs like extra={...} #4047](https://github.com/huggingface/accelerate/pull/4047) | Open |
 | [huggingface/tokenizers](https://github.com/huggingface/tokenizers) | [Fix typo in EncodingVisualizer.annotation_converter attribute #2068](https://github.com/huggingface/tokenizers/pull/2068) | Open |
+| [huggingface/peft](https://github.com/huggingface/peft) | [Return False from is_gptqmodel_available when gptqmodel isn't installed #3255](https://github.com/huggingface/peft/pull/3255) | Open |
 | [18F/charlie](https://github.com/18F/charlie) | [tau-bot: skip times the author marked as local #602](https://github.com/18F/charlie/pull/602) | Merged |
 | [18F/charlie](https://github.com/18F/charlie) | [InclusionBot: move religious-tradition entries from Racist to Other #603](https://github.com/18F/charlie/pull/603) | Open |
 | [codeforboston/maple](https://github.com/codeforboston/maple) | [Remove showLLMFeatures feature flag #2142](https://github.com/codeforboston/maple/pull/2142) | Open |
@@ -255,7 +256,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [schollz/croc](https://github.com/schollz/croc) | [Dockerfile: bump builder image to golang:1.25 #1108](https://github.com/schollz/croc/pull/1108) | Merged |
 | [SchemaStore/schemastore](https://github.com/SchemaStore/schemastore) | [claude-code-settings: add MultiEdit to permission rule regex #5701](https://github.com/SchemaStore/schemastore/pull/5701) | Open |
 | [cosmos/cosmos-sdk](https://github.com/cosmos/cosmos-sdk) | [types/query: saturate Paginate end when offset+limit overflows #26430](https://github.com/cosmos/cosmos-sdk/pull/26430) | Open |
-| [elastic/beats](https://github.com/elastic/beats) | [filebeat: nil-check UDP RemoteAddr before formatting in debug log #50770](https://github.com/elastic/beats/pull/50770) | Open |
+| [elastic/beats](https://github.com/elastic/beats) | [filebeat: nil-check UDP RemoteAddr before formatting in debug log #50770](https://github.com/elastic/beats/pull/50770) | Merged |
 | [gorilla/securecookie](https://github.com/gorilla/securecookie) | [Add SecureCookie.Err for surfacing deferred configuration errors #92](https://github.com/gorilla/securecookie/pull/92) | Open |
 | [google/go-jsonnet](https://github.com/google/go-jsonnet) | [parseYaml: drop the stray null when the stream starts with comments #875](https://github.com/google/go-jsonnet/pull/875) | Open |
 | [influxdata/influxdb-client-go](https://github.com/influxdata/influxdb-client-go) | [write/service: handle a nil URL from url.Parse without panicking #427](https://github.com/influxdata/influxdb-client-go/pull/427) | Open |
