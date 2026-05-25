@@ -279,6 +279,10 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [csharp: use Random.Shared for svix-req-id #2335](https://github.com/svix/svix-webhooks/pull/2335) | Merged |
 | [bloomberg/pystack](https://github.com/bloomberg/pystack) | [conftest: exit with a clear message when ptrace_scope blocks the test suite #309](https://github.com/bloomberg/pystack/pull/309) | Merged |
 | [tobymao/sqlglot](https://github.com/tobymao/sqlglot) | [Raise ParseError, not IndexError, on an unclosed JSONPath filter #7665](https://github.com/tobymao/sqlglot/pull/7665) | Merged |
+| [segmentio/encoding](https://github.com/segmentio/encoding) | [json: return writer errors from Encoder.Encode #163](https://github.com/segmentio/encoding/pull/163) | Open |
+| [vektah/gqlparser](https://github.com/vektah/gqlparser) | [lexer: render invalid-character codepoint as hex, not decimal #431](https://github.com/vektah/gqlparser/pull/431) | Open |
+| [eko/gocache](https://github.com/eko/gocache) | [cache(chain): return an error from Get when no caches are configured #309](https://github.com/eko/gocache/pull/309) | Open |
+| [buger/jsonparser](https://github.com/buger/jsonparser) | [fix: don't panic on empty key when path enters an array #284](https://github.com/buger/jsonparser/pull/284) | Open |
 </details>
 
 ## Projects
