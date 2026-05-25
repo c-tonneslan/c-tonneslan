@@ -283,6 +283,9 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [vektah/gqlparser](https://github.com/vektah/gqlparser) | [lexer: render invalid-character codepoint as hex, not decimal #431](https://github.com/vektah/gqlparser/pull/431) | Open |
 | [eko/gocache](https://github.com/eko/gocache) | [cache(chain): return an error from Get when no caches are configured #309](https://github.com/eko/gocache/pull/309) | Open |
 | [buger/jsonparser](https://github.com/buger/jsonparser) | [fix: don't panic on empty key when path enters an array #284](https://github.com/buger/jsonparser/pull/284) | Open |
+| [rivo/tview](https://github.com/rivo/tview) | [table: stop InputHandler hanging when every cell is non-selectable #1155](https://github.com/rivo/tview/pull/1155) | Open |
+| [spf13/pflag](https://github.com/spf13/pflag) | [ip: stop GetIP erroring when the IP flag has a nil default #478](https://github.com/spf13/pflag/pull/478) | Open |
+| [cucumber/godog](https://github.com/cucumber/godog) | [suite: recover from panics in after-step and after-scenario hooks #745](https://github.com/cucumber/godog/pull/745) | Open |
 </details>
 
 ## Projects
