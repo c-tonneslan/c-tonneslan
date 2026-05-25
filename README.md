@@ -287,6 +287,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [spf13/pflag](https://github.com/spf13/pflag) | [ip: stop GetIP erroring when the IP flag has a nil default #478](https://github.com/spf13/pflag/pull/478) | Open |
 | [cucumber/godog](https://github.com/cucumber/godog) | [suite: recover from panics in after-step and after-scenario hooks #745](https://github.com/cucumber/godog/pull/745) | Open |
 | [shopspring/decimal](https://github.com/shopspring/decimal) | [fix: NumDigits underreports for some exact powers of ten #425](https://github.com/shopspring/decimal/pull/425) | Open |
+| [a-h/templ](https://github.com/a-h/templ) | [examples/suspense: buffer the slot channel so producers can't leak #1401](https://github.com/a-h/templ/pull/1401) | Open |
 </details>
 
 ## Projects
