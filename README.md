@@ -294,6 +294,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [stone-payments/card-interview](https://github.com/c-tonneslan/card-interview) | Solution (forked, public completion) — Go card authorizer through 3 phases (fraud rules, worker pool, bounded queue, circular buffer, /metrics) | Solution |
 | [gigs-hiring/backend-challenge](https://github.com/c-tonneslan/backend-challenge) | Solution (forked, public completion) — Go service forwarding Pub/Sub notifications to Svix with dedup, retry/backoff, rate-limit handling | Solution |
 | [PropellerAero/hardware-backend-challenge](https://github.com/c-tonneslan/hardware-backend-challenge) | Solution (forked, public completion) — Go CLI that pulls NOAA CORS hourly RINEX blocks and merges into one .obs file, verified live against NOAA | Solution |
+| [Pulse-Intelligence-Partners-Public/full-stack-challenge-3d-drillholes](https://github.com/c-tonneslan/pulse-drillholes) | Solution (template fork, public completion) — Next.js + react-three-fiber 3D viewer for ASX drillhole data with collar/intercept clicks + source-PDF deep links | Solution |
 </details>
 
 ## Projects
