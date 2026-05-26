@@ -288,6 +288,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [cucumber/godog](https://github.com/cucumber/godog) | [suite: recover from panics in after-step and after-scenario hooks #745](https://github.com/cucumber/godog/pull/745) | Open |
 | [shopspring/decimal](https://github.com/shopspring/decimal) | [fix: NumDigits underreports for some exact powers of ten #425](https://github.com/shopspring/decimal/pull/425) | Open |
 | [a-h/templ](https://github.com/a-h/templ) | [examples/suspense: buffer the slot channel so producers can't leak #1401](https://github.com/a-h/templ/pull/1401) | Open |
+| [go-resty/resty](https://github.com/go-resty/resty) | [fix: separate URL from -F/-d in buildCurlCmd output #1165](https://github.com/go-resty/resty/pull/1165) | Open |
 </details>
 
 ## Projects
