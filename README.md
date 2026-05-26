@@ -290,6 +290,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [a-h/templ](https://github.com/a-h/templ) | [examples/suspense: buffer the slot channel so producers can't leak #1401](https://github.com/a-h/templ/pull/1401) | Open |
 | [go-resty/resty](https://github.com/go-resty/resty) | [fix: separate URL from -F/-d in buildCurlCmd output #1165](https://github.com/go-resty/resty/pull/1165) | Open |
 | [OriginFinancial/origin-backend-take-home-assignment](https://github.com/c-tonneslan/origin-backend-take-home-assignment) | Solution (forked, public completion) — Go user-access-management service with signup + streaming-CSV eligibility endpoint | Solution |
+| [volvo-cars/congestion-tax-calculator](https://github.com/c-tonneslan/congestion-tax-calculator) | Solution (forked, public completion) — rewrote the Go starter, fixed the calculation bugs, added HTTP + multi-city JSON config | Solution |
 </details>
 
 ## Projects
