@@ -293,6 +293,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [volvo-cars/congestion-tax-calculator](https://github.com/c-tonneslan/congestion-tax-calculator) | Solution (forked, public completion) — rewrote the Go starter, fixed the calculation bugs, added HTTP + multi-city JSON config | Solution |
 | [stone-payments/card-interview](https://github.com/c-tonneslan/card-interview) | Solution (forked, public completion) — Go card authorizer through 3 phases (fraud rules, worker pool, bounded queue, circular buffer, /metrics) | Solution |
 | [gigs-hiring/backend-challenge](https://github.com/c-tonneslan/backend-challenge) | Solution (forked, public completion) — Go service forwarding Pub/Sub notifications to Svix with dedup, retry/backoff, rate-limit handling | Solution |
+| [PropellerAero/hardware-backend-challenge](https://github.com/c-tonneslan/hardware-backend-challenge) | Solution (forked, public completion) — Go CLI that pulls NOAA CORS hourly RINEX blocks and merges into one .obs file, verified live against NOAA | Solution |
 </details>
 
 ## Projects
