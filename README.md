@@ -292,6 +292,7 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [OriginFinancial/origin-backend-take-home-assignment](https://github.com/c-tonneslan/origin-backend-take-home-assignment) | Solution (forked, public completion) — Go user-access-management service with signup + streaming-CSV eligibility endpoint | Solution |
 | [volvo-cars/congestion-tax-calculator](https://github.com/c-tonneslan/congestion-tax-calculator) | Solution (forked, public completion) — rewrote the Go starter, fixed the calculation bugs, added HTTP + multi-city JSON config | Solution |
 | [stone-payments/card-interview](https://github.com/c-tonneslan/card-interview) | Solution (forked, public completion) — Go card authorizer through 3 phases (fraud rules, worker pool, bounded queue, circular buffer, /metrics) | Solution |
+| [gigs-hiring/backend-challenge](https://github.com/c-tonneslan/backend-challenge) | Solution (forked, public completion) — Go service forwarding Pub/Sub notifications to Svix with dedup, retry/backoff, rate-limit handling | Solution |
 </details>
 
 ## Projects
