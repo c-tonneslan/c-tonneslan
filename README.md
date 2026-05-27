@@ -266,6 +266,12 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [knadh/koanf](https://github.com/knadh/koanf) | [Bools: return the matched []bool, not the nil intermediate #416](https://github.com/knadh/koanf/pull/416) | Open |
 | [jackc/pgx](https://github.com/jackc/pgx) | [pgproto3: hex-decode CopyData.Data in UnmarshalJSON #2569](https://github.com/jackc/pgx/pull/2569) | Open |
 | [labstack/echo](https://github.com/labstack/echo) | [fix(binder): MustUnixTime docs say time.Time, not time.Duration #2988](https://github.com/labstack/echo/pull/2988) | Open |
+| [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea) | [docs: fix Init signature and Cmd usage in godoc examples #1703](https://github.com/charmbracelet/bubbletea/pull/1703) | Open |
+| [nats-io/nats.go](https://github.com/nats-io/nats.go) | [iter: don't yield a phantom (nil, nil) after MsgsTimeout's ErrTimeout #2093](https://github.com/nats-io/nats.go/pull/2093) | Open |
+| [avast/retry-go](https://github.com/avast/retry-go) | [options: fix newRetrierCore typo #156](https://github.com/avast/retry-go/pull/156) | Open |
+| [goccy/go-json](https://github.com/goccy/go-json) | [path: fix godoc prefix on UsedDoubleQuotePathSelector #580](https://github.com/goccy/go-json/pull/580) | Open |
+| [charmbracelet/wish](https://github.com/charmbracelet/wish) | [options: fix WithBanner / WithBannerHandler godoc to say 'returns' #553](https://github.com/charmbracelet/wish/pull/553) | Open |
+| [deckarep/golang-set](https://github.com/deckarep/golang-set) | [set: complete two truncated doc comments #185](https://github.com/deckarep/golang-set/pull/185) | Open |
 
 | [alecthomas/kong](https://github.com/alecthomas/kong) | [Support the env tag on positional arguments (closes #556) #601](https://github.com/alecthomas/kong/pull/601) | Merged |
 | [coredns/coredns](https://github.com/coredns/coredns) | [plugin/file: canonicalize escape form in owner names #8109](https://github.com/coredns/coredns/pull/8109) | Merged |
