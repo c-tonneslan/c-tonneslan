@@ -272,6 +272,8 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [goccy/go-json](https://github.com/goccy/go-json) | [path: fix godoc prefix on UsedDoubleQuotePathSelector #580](https://github.com/goccy/go-json/pull/580) | Open |
 | [charmbracelet/wish](https://github.com/charmbracelet/wish) | [options: fix WithBanner / WithBannerHandler godoc to say 'returns' #553](https://github.com/charmbracelet/wish/pull/553) | Open |
 | [deckarep/golang-set](https://github.com/deckarep/golang-set) | [set: complete two truncated doc comments #185](https://github.com/deckarep/golang-set/pull/185) | Open |
+| [influxdata/influxdb-client-go](https://github.com/influxdata/influxdb-client-go) | [write/point: run convertField when AddField re-sets an existing key #428](https://github.com/influxdata/influxdb-client-go/pull/428) | Open |
+| [influxdata/influxdb-client-go](https://github.com/influxdata/influxdb-client-go) | [api/write: poll writeBuffer length, not the unbuffered info channel #429](https://github.com/influxdata/influxdb-client-go/pull/429) | Open |
 
 | [alecthomas/kong](https://github.com/alecthomas/kong) | [Support the env tag on positional arguments (closes #556) #601](https://github.com/alecthomas/kong/pull/601) | Merged |
 | [coredns/coredns](https://github.com/coredns/coredns) | [plugin/file: canonicalize escape form in owner names #8109](https://github.com/coredns/coredns/pull/8109) | Merged |
