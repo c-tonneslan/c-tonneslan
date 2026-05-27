@@ -263,6 +263,9 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [asaskevich/govalidator](https://github.com/asaskevich/govalidator) | [Accept domain labels with multiple consecutive hyphens in IsURL #513](https://github.com/asaskevich/govalidator/pull/513) | Open |
 | [exoscale/terraform-provider-exoscale](https://github.com/exoscale/terraform-provider-exoscale) | [instance: don't panic reading an instance destroyed out-of-band #536](https://github.com/exoscale/terraform-provider-exoscale/pull/536) | Open |
 | [quinn-rs/quinn](https://github.com/quinn-rs/quinn) | [streams: reject STOP_SENDING and MAX_STREAM_DATA beyond the stream limit #2652](https://github.com/quinn-rs/quinn/pull/2652) | Open |
+| [knadh/koanf](https://github.com/knadh/koanf) | [Bools: return the matched []bool, not the nil intermediate #416](https://github.com/knadh/koanf/pull/416) | Open |
+| [jackc/pgx](https://github.com/jackc/pgx) | [pgproto3: hex-decode CopyData.Data in UnmarshalJSON #2569](https://github.com/jackc/pgx/pull/2569) | Open |
+| [labstack/echo](https://github.com/labstack/echo) | [fix(binder): MustUnixTime docs say time.Time, not time.Duration #2988](https://github.com/labstack/echo/pull/2988) | Open |
 
 | [alecthomas/kong](https://github.com/alecthomas/kong) | [Support the env tag on positional arguments (closes #556) #601](https://github.com/alecthomas/kong/pull/601) | Merged |
 | [coredns/coredns](https://github.com/coredns/coredns) | [plugin/file: canonicalize escape form in owner names #8109](https://github.com/coredns/coredns/pull/8109) | Merged |
