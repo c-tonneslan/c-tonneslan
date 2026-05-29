@@ -314,6 +314,8 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [getsentry/sentry-go](https://github.com/getsentry/sentry-go) | [fix(log): don't run Emit messages through fmt.Sprintf #1309](https://github.com/getsentry/sentry-go/pull/1309) | Open |
 | [labstack/gommon](https://github.com/labstack/gommon) | [random: return empty string instead of spinning when length is 0 #63](https://github.com/labstack/gommon/pull/63) | Open |
 | [99designs/gqlgen](https://github.com/99designs/gqlgen) | [fix: CoerceList drops elements from typed slices past the first #4194](https://github.com/99designs/gqlgen/pull/4194) | Open |
+| [DATA-DOG/go-sqlmock](https://github.com/DATA-DOG/go-sqlmock) | [fix: ExpectBegin TxOptions check uses && instead of \|\| #351](https://github.com/DATA-DOG/go-sqlmock/pull/351) | Open |
+| [wneessen/go-mail](https://github.com/wneessen/go-mail) | [fix(random): drop the unreachable '-' character from cr #560](https://github.com/wneessen/go-mail/pull/560) | Open |
 </details>
 
 ## Projects
