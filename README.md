@@ -12,7 +12,7 @@ Bugs and features I shipped into widely-used Go libraries:
 - **[urfave/cli](https://github.com/urfave/cli)** ([#2328](https://github.com/urfave/cli/pull/2328)). Most-used CLI framework in Go. Pinned down the empty-positional-after-flag case with a regression test I ran into writing a different tool.
 - **[gocolly/colly](https://github.com/gocolly/colly)** ([#873](https://github.com/gocolly/colly/pull/873)). Web scraping framework. Dropped a deprecated `rand.Seed` call from `httpBackend.Init` that started warning under Go 1.20+.
 
-Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, mySociety (MapIt, FixMyStreet, Alaveteli, TheyWorkForYou), DemocracyClub, Open States, OpenElections, NYCDB, and more. Full list collapsed at the bottom.
+Open and in review: ~218 more PRs across ~143 repos, including Tailscale, LiveKit, gRPC, etcd, Charm, Grafana k6, OpenTelemetry, sqlx, asynq, chi, kong, fx, atomic, goleak, golang-jwt, go-jose, go-yaml, gleam, uutils/coreutils, cross-rs, rust-itertools, mySociety (MapIt, FixMyStreet, Alaveteli, TheyWorkForYou), DemocracyClub, Open States, OpenElections, NYCDB, and more. Full list collapsed at the bottom.
 
 <details>
 <summary>All PRs (open and merged)</summary>
@@ -307,6 +307,9 @@ Open and in review: ~215 more PRs across ~140 repos, including Tailscale, LiveKi
 | [PropellerAero/hardware-backend-challenge](https://github.com/c-tonneslan/hardware-backend-challenge) | Solution (forked, public completion) — Go CLI that pulls NOAA CORS hourly RINEX blocks and merges into one .obs file, verified live against NOAA | Solution |
 | [Pulse-Intelligence-Partners-Public/full-stack-challenge-3d-drillholes](https://github.com/c-tonneslan/pulse-drillholes) | Solution (template fork, public completion) ([live](https://pulse-drillholes.vercel.app)). Next.js + react-three-fiber 3D viewer for ASX drillhole data with click-to-inspect, source-PDF deep links, hole-list filter, mobile bottom sheet, auto-fitting camera, 13 geometry tests | Solution |
 | [react-hook-form/react-hook-form](https://github.com/react-hook-form/react-hook-form) | [fix: deepEqual short-circuits on host objects with no own keys #13484](https://github.com/react-hook-form/react-hook-form/pull/13484) | Open |
+| [charmbracelet/keygen](https://github.com/charmbracelet/keygen) | [docs: fix two godoc typos in keygen.go #56](https://github.com/charmbracelet/keygen/pull/56) | Open |
+| [samber/mo](https://github.com/samber/mo) | [docs: fix two typos in option.go #106](https://github.com/samber/mo/pull/106) | Open |
+| [charmbracelet/harmonica](https://github.com/charmbracelet/harmonica) | [docs: fix two godoc typos #26](https://github.com/charmbracelet/harmonica/pull/26) | Open |
 </details>
 
 ## Projects
