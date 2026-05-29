@@ -263,9 +263,9 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [asaskevich/govalidator](https://github.com/asaskevich/govalidator) | [Accept domain labels with multiple consecutive hyphens in IsURL #513](https://github.com/asaskevich/govalidator/pull/513) | Open |
 | [exoscale/terraform-provider-exoscale](https://github.com/exoscale/terraform-provider-exoscale) | [instance: don't panic reading an instance destroyed out-of-band #536](https://github.com/exoscale/terraform-provider-exoscale/pull/536) | Open |
 | [quinn-rs/quinn](https://github.com/quinn-rs/quinn) | [streams: reject STOP_SENDING and MAX_STREAM_DATA beyond the stream limit #2652](https://github.com/quinn-rs/quinn/pull/2652) | Open |
-| [knadh/koanf](https://github.com/knadh/koanf) | [Bools: return the matched []bool, not the nil intermediate #416](https://github.com/knadh/koanf/pull/416) | Open |
+| [knadh/koanf](https://github.com/knadh/koanf) | [Bools: return the matched []bool, not the nil intermediate #416](https://github.com/knadh/koanf/pull/416) | Merged |
 | [jackc/pgx](https://github.com/jackc/pgx) | [pgproto3: hex-decode CopyData.Data in UnmarshalJSON #2569](https://github.com/jackc/pgx/pull/2569) | Open |
-| [labstack/echo](https://github.com/labstack/echo) | [fix(binder): MustUnixTime docs say time.Time, not time.Duration #2988](https://github.com/labstack/echo/pull/2988) | Open |
+| [labstack/echo](https://github.com/labstack/echo) | [fix(binder): MustUnixTime docs say time.Time, not time.Duration #2988](https://github.com/labstack/echo/pull/2988) | Merged |
 | [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea) | [docs: fix Init signature and Cmd usage in godoc examples #1703](https://github.com/charmbracelet/bubbletea/pull/1703) | Open |
 | [nats-io/nats.go](https://github.com/nats-io/nats.go) | [iter: don't yield a phantom (nil, nil) after MsgsTimeout's ErrTimeout #2093](https://github.com/nats-io/nats.go/pull/2093) | Open |
 | [avast/retry-go](https://github.com/avast/retry-go) | [options: fix newRetrierCore typo #156](https://github.com/avast/retry-go/pull/156) | Open |
@@ -299,7 +299,7 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [cucumber/godog](https://github.com/cucumber/godog) | [suite: recover from panics in after-step and after-scenario hooks #745](https://github.com/cucumber/godog/pull/745) | Open |
 | [shopspring/decimal](https://github.com/shopspring/decimal) | [fix: NumDigits underreports for some exact powers of ten #425](https://github.com/shopspring/decimal/pull/425) | Open |
 | [a-h/templ](https://github.com/a-h/templ) | [examples/suspense: buffer the slot channel so producers can't leak #1401](https://github.com/a-h/templ/pull/1401) | Open |
-| [go-resty/resty](https://github.com/go-resty/resty) | [fix: separate URL from -F/-d in buildCurlCmd output #1165](https://github.com/go-resty/resty/pull/1165) | Open |
+| [go-resty/resty](https://github.com/go-resty/resty) | [fix: separate URL from -F/-d in buildCurlCmd output #1165](https://github.com/go-resty/resty/pull/1165) | Merged |
 | [OriginFinancial/origin-backend-take-home-assignment](https://github.com/c-tonneslan/origin-backend-take-home-assignment) | Solution (forked, public completion) — Go user-access-management service with signup + streaming-CSV eligibility endpoint | Solution |
 | [volvo-cars/congestion-tax-calculator](https://github.com/c-tonneslan/congestion-tax-calculator) | Solution (forked, public completion) — rewrote the Go starter, fixed the calculation bugs, added HTTP + multi-city JSON config | Solution |
 | [stone-payments/card-interview](https://github.com/c-tonneslan/card-interview) | Solution (forked, public completion) — Go card authorizer through 3 phases (fraud rules, worker pool, bounded queue, circular buffer, /metrics) | Solution |
@@ -308,7 +308,7 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [Pulse-Intelligence-Partners-Public/full-stack-challenge-3d-drillholes](https://github.com/c-tonneslan/pulse-drillholes) | Solution (template fork, public completion) ([live](https://pulse-drillholes.vercel.app)). Next.js + react-three-fiber 3D viewer for ASX drillhole data with click-to-inspect, source-PDF deep links, hole-list filter, mobile bottom sheet, auto-fitting camera, 13 geometry tests | Solution |
 | [react-hook-form/react-hook-form](https://github.com/react-hook-form/react-hook-form) | [fix: deepEqual short-circuits on host objects with no own keys #13484](https://github.com/react-hook-form/react-hook-form/pull/13484) | Open |
 | [charmbracelet/keygen](https://github.com/charmbracelet/keygen) | [docs: fix two godoc typos in keygen.go #56](https://github.com/charmbracelet/keygen/pull/56) | Open |
-| [samber/mo](https://github.com/samber/mo) | [docs: fix two typos in option.go #106](https://github.com/samber/mo/pull/106) | Open |
+| [samber/mo](https://github.com/samber/mo) | [docs: fix two typos in option.go #106](https://github.com/samber/mo/pull/106) | Merged |
 | [charmbracelet/harmonica](https://github.com/charmbracelet/harmonica) | [docs: fix two godoc typos #26](https://github.com/charmbracelet/harmonica/pull/26) | Open |
 | [spf13/viper](https://github.com/spf13/viper) | [util: parseSizeInBytes returns 0 for single-byte strings like 1B #2132](https://github.com/spf13/viper/pull/2132) | Open |
 | [getsentry/sentry-go](https://github.com/getsentry/sentry-go) | [fix(log): don't run Emit messages through fmt.Sprintf #1309](https://github.com/getsentry/sentry-go/pull/1309) | Open |
