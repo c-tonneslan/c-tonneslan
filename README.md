@@ -320,6 +320,14 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [gocolly/colly](https://github.com/gocolly/colly) | [queue: don't block AddRequest after Run has returned #876](https://github.com/gocolly/colly/pull/876) | Open |
 | [spf13/cast](https://github.com/spf13/cast) | [number: derive ParseInt/ParseUint bitSize from the target type #348](https://github.com/spf13/cast/pull/348) | Open |
 | [go-git/go-git](https://github.com/go-git/go-git) | [config: read repositoryformatversion in unmarshalCore #2167](https://github.com/go-git/go-git/pull/2167) | Open |
+| [sosedoff/pgweb](https://github.com/sosedoff/pgweb) | [client: block pg_cancel_backend and pg_terminate_backend in read-only mode #859](https://github.com/sosedoff/pgweb/pull/859) | Open |
+| [cli/cli](https://github.com/cli/cli) | [text: use EscapedPath in DisplayURL so percent-encoded chars survive #13556](https://github.com/cli/cli/pull/13556) | Open |
+| [hetznercloud/hcloud-go](https://github.com/hetznercloud/hcloud-go) | [feat(action): add missing ActionResourceType constants #862](https://github.com/hetznercloud/hcloud-go/pull/862) | Open |
+| [alecthomas/chroma](https://github.com/alecthomas/chroma) | [formatters/html: drop -moz-tab-size and -o-tab-size prefixes #1279](https://github.com/alecthomas/chroma/pull/1279) | Open |
+| [alecthomas/kong](https://github.com/alecthomas/kong) | [treat single-character aliases as short flags #605](https://github.com/alecthomas/kong/pull/605) | Open |
+| [ollama/ollama](https://github.com/ollama/ollama) | [docs: fix web-search JS examples and unsupported Anthropic stream events #16374](https://github.com/ollama/ollama/pull/16374) | Open |
+| [networkx/networkx](https://github.com/networkx/networkx) | [DOC: note directed-graph behaviour in degree_centrality #8668](https://github.com/networkx/networkx/pull/8668) | Open |
+| [mholt/archives](https://github.com/mholt/archives) | [test: add regression for ArchiveFS.ReadDir on implicit ZIP dirs #73](https://github.com/mholt/archives/pull/73) | Open |
 </details>
 
 ## Projects
