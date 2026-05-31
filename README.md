@@ -318,6 +318,8 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [wneessen/go-mail](https://github.com/wneessen/go-mail) | [fix(random): drop the unreachable '-' character from cr #560](https://github.com/wneessen/go-mail/pull/560) | Merged |
 | [allegro/bigcache](https://github.com/allegro/bigcache) | [shard: skip hashmapStats allocation when stats are disabled #423](https://github.com/allegro/bigcache/pull/423) | Open |
 | [gocolly/colly](https://github.com/gocolly/colly) | [queue: don't block AddRequest after Run has returned #876](https://github.com/gocolly/colly/pull/876) | Open |
+| [spf13/cast](https://github.com/spf13/cast) | [number: derive ParseInt/ParseUint bitSize from the target type #348](https://github.com/spf13/cast/pull/348) | Open |
+| [go-git/go-git](https://github.com/go-git/go-git) | [config: read repositoryformatversion in unmarshalCore #2167](https://github.com/go-git/go-git/pull/2167) | Open |
 </details>
 
 ## Projects
