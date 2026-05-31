@@ -264,7 +264,7 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [exoscale/terraform-provider-exoscale](https://github.com/exoscale/terraform-provider-exoscale) | [instance: don't panic reading an instance destroyed out-of-band #536](https://github.com/exoscale/terraform-provider-exoscale/pull/536) | Open |
 | [quinn-rs/quinn](https://github.com/quinn-rs/quinn) | [streams: reject STOP_SENDING and MAX_STREAM_DATA beyond the stream limit #2652](https://github.com/quinn-rs/quinn/pull/2652) | Open |
 | [knadh/koanf](https://github.com/knadh/koanf) | [Bools: return the matched []bool, not the nil intermediate #416](https://github.com/knadh/koanf/pull/416) | Merged |
-| [jackc/pgx](https://github.com/jackc/pgx) | [pgproto3: hex-decode CopyData.Data in UnmarshalJSON #2569](https://github.com/jackc/pgx/pull/2569) | Open |
+| [jackc/pgx](https://github.com/jackc/pgx) | [pgproto3: hex-decode CopyData.Data in UnmarshalJSON #2569](https://github.com/jackc/pgx/pull/2569) | Merged |
 | [labstack/echo](https://github.com/labstack/echo) | [fix(binder): MustUnixTime docs say time.Time, not time.Duration #2988](https://github.com/labstack/echo/pull/2988) | Merged |
 | [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea) | [docs: fix Init signature and Cmd usage in godoc examples #1703](https://github.com/charmbracelet/bubbletea/pull/1703) | Open |
 | [nats-io/nats.go](https://github.com/nats-io/nats.go) | [iter: don't yield a phantom (nil, nil) after MsgsTimeout's ErrTimeout #2093](https://github.com/nats-io/nats.go/pull/2093) | Open |
@@ -313,9 +313,9 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [spf13/viper](https://github.com/spf13/viper) | [util: parseSizeInBytes returns 0 for single-byte strings like 1B #2132](https://github.com/spf13/viper/pull/2132) | Open |
 | [getsentry/sentry-go](https://github.com/getsentry/sentry-go) | [fix(log): don't run Emit messages through fmt.Sprintf #1309](https://github.com/getsentry/sentry-go/pull/1309) | Open |
 | [labstack/gommon](https://github.com/labstack/gommon) | [random: return empty string instead of spinning when length is 0 #63](https://github.com/labstack/gommon/pull/63) | Open |
-| [99designs/gqlgen](https://github.com/99designs/gqlgen) | [fix: CoerceList drops elements from typed slices past the first #4194](https://github.com/99designs/gqlgen/pull/4194) | Open |
+| [99designs/gqlgen](https://github.com/99designs/gqlgen) | [fix: CoerceList drops elements from typed slices past the first #4194](https://github.com/99designs/gqlgen/pull/4194) | Merged |
 | [DATA-DOG/go-sqlmock](https://github.com/DATA-DOG/go-sqlmock) | [fix: ExpectBegin TxOptions check uses && instead of \|\| #351](https://github.com/DATA-DOG/go-sqlmock/pull/351) | Open |
-| [wneessen/go-mail](https://github.com/wneessen/go-mail) | [fix(random): drop the unreachable '-' character from cr #560](https://github.com/wneessen/go-mail/pull/560) | Open |
+| [wneessen/go-mail](https://github.com/wneessen/go-mail) | [fix(random): drop the unreachable '-' character from cr #560](https://github.com/wneessen/go-mail/pull/560) | Merged |
 | [allegro/bigcache](https://github.com/allegro/bigcache) | [shard: skip hashmapStats allocation when stats are disabled #423](https://github.com/allegro/bigcache/pull/423) | Open |
 | [gocolly/colly](https://github.com/gocolly/colly) | [queue: don't block AddRequest after Run has returned #876](https://github.com/gocolly/colly/pull/876) | Open |
 </details>
