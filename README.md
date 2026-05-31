@@ -316,6 +316,8 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [99designs/gqlgen](https://github.com/99designs/gqlgen) | [fix: CoerceList drops elements from typed slices past the first #4194](https://github.com/99designs/gqlgen/pull/4194) | Open |
 | [DATA-DOG/go-sqlmock](https://github.com/DATA-DOG/go-sqlmock) | [fix: ExpectBegin TxOptions check uses && instead of \|\| #351](https://github.com/DATA-DOG/go-sqlmock/pull/351) | Open |
 | [wneessen/go-mail](https://github.com/wneessen/go-mail) | [fix(random): drop the unreachable '-' character from cr #560](https://github.com/wneessen/go-mail/pull/560) | Open |
+| [allegro/bigcache](https://github.com/allegro/bigcache) | [shard: skip hashmapStats allocation when stats are disabled #423](https://github.com/allegro/bigcache/pull/423) | Open |
+| [gocolly/colly](https://github.com/gocolly/colly) | [queue: don't block AddRequest after Run has returned #876](https://github.com/gocolly/colly/pull/876) | Open |
 </details>
 
 ## Projects
