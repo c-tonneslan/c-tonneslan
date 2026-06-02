@@ -208,6 +208,9 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [simonw/datasette](https://github.com/simonw/datasette) | [docs: mention WAL mode for concurrently written databases #2718](https://github.com/simonw/datasette/pull/2718) | Open |
 | [simonw/json-flatten](https://github.com/simonw/json-flatten) | [Fix unflatten crashing on keys that contain a dollar sign #11](https://github.com/simonw/json-flatten/pull/11) | Open |
 | [simonw/symbex](https://github.com/simonw/symbex) | [Render dotted base classes and metaclass values instead of dropping them #49](https://github.com/simonw/symbex/pull/49) | Open |
+| [simonw/llm-anthropic](https://github.com/simonw/llm-anthropic) | [Accept None for temperature, and stop the top_p guard firing on the default #70](https://github.com/simonw/llm-anthropic/pull/70) | Open |
+| [simonw/llm-anthropic](https://github.com/simonw/llm-anthropic) | [Send top_p when it's 0.0 instead of treating it as unset #74](https://github.com/simonw/llm-anthropic/pull/74) | Open |
+| [simonw/llm-gemini](https://github.com/simonw/llm-gemini) | [Move the gemini files API key out of the URL and guard against an unset key #134](https://github.com/simonw/llm-gemini/pull/134) | Open |
 | [huggingface/accelerate](https://github.com/huggingface/accelerate) | [logging: stop warning_once from crashing on unhashable kwargs like extra={...} #4047](https://github.com/huggingface/accelerate/pull/4047) | Open |
 | [huggingface/tokenizers](https://github.com/huggingface/tokenizers) | [Fix typo in EncodingVisualizer.annotation_converter attribute #2068](https://github.com/huggingface/tokenizers/pull/2068) | Open |
 | [huggingface/peft](https://github.com/huggingface/peft) | [Return False from is_gptqmodel_available when gptqmodel isn't installed #3255](https://github.com/huggingface/peft/pull/3255) | Open |
