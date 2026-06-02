@@ -211,6 +211,7 @@ Open and in review: ~222 more PRs across ~147 repos, including Tailscale, LiveKi
 | [simonw/llm-anthropic](https://github.com/simonw/llm-anthropic) | [Accept None for temperature, and stop the top_p guard firing on the default #70](https://github.com/simonw/llm-anthropic/pull/70) | Open |
 | [simonw/llm-anthropic](https://github.com/simonw/llm-anthropic) | [Send top_p when it's 0.0 instead of treating it as unset #74](https://github.com/simonw/llm-anthropic/pull/74) | Open |
 | [simonw/llm-gemini](https://github.com/simonw/llm-gemini) | [Move the gemini files API key out of the URL and guard against an unset key #134](https://github.com/simonw/llm-gemini/pull/134) | Open |
+| [simonw/llm-gemini](https://github.com/simonw/llm-gemini) | [AsyncGeminiPro.execute: record the resolved model too #137](https://github.com/simonw/llm-gemini/pull/137) | Open |
 | [huggingface/accelerate](https://github.com/huggingface/accelerate) | [logging: stop warning_once from crashing on unhashable kwargs like extra={...} #4047](https://github.com/huggingface/accelerate/pull/4047) | Open |
 | [huggingface/tokenizers](https://github.com/huggingface/tokenizers) | [Fix typo in EncodingVisualizer.annotation_converter attribute #2068](https://github.com/huggingface/tokenizers/pull/2068) | Open |
 | [huggingface/peft](https://github.com/huggingface/peft) | [Return False from is_gptqmodel_available when gptqmodel isn't installed #3255](https://github.com/huggingface/peft/pull/3255) | Open |
